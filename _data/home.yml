@@ -1,0 +1,49 @@
+
+resume_links:
+  - title: DOC
+    url: brian_runk_resume.docx
+    img: doc.png
+    alt_txt: MS Word Resume
+    
+  - title: PDF
+    url:  brian_runk_resume.pdf
+    img: pdf.png
+    alt_txt: PDF Resume
+    
+  - title: TXT
+    url:  brian_runk_resume.txt
+    img: txt.png
+    alt_txt: Text Resume
+    
+page_entries:
+  - title: Who is Brian?
+    url: who
+    desc: I manage engineering organizations that deliver high-demand internet application
+    img: lightning.png
+    
+  - title: What I’ve done
+    url: what
+    desc: 30+ years of digital leadership, building applications, teams and cultures.
+    img: whirlwind.png 	    
+
+  - title: Where I'm headed ...
+    url: where
+    desc: Current interviewing, I am open to all intriguing opportunities.
+    img: rising_sun.png
+    
+footer_entries:
+  - title: linkedin
+    url: https://linked.com/in/brianrunk
+    img: linkedin.svg
+    alt_txt: LinkedIn
+    
+  - title: instagram
+    url: https://instagram.com/brian_915
+    img: instagram.svg
+    alt_txt: Instagram
+
+  - title: github
+    url: https://github.com/brian915
+    img: github.svg
+    alt_txt: Github
+

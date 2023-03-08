@@ -1,0 +1,9 @@
+  <a href="/what/">RESUME:</a>
+  {% for resume_item in include.collection %}
+  <div class="resume-item">
+    <a href="/assets/docs/{{ resume_item.url }}" target="new">
+      <img class="resume-icon" src="/assets/images/{{ resume_item.img }}" alt="{{ resume_item.alt_txt  }}">
+    </a>
+  </div>
+    {% endfor %}
+

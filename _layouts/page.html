@@ -1,0 +1,35 @@
+---
+layout: default
+---
+  <header class="site-head">
+    <div class="container">
+
+      <div class="site-mast">
+        <div class="site-mast-left">
+	  <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+        </div>
+        <div class="site-mast-right">  
+	  {% if site.theme_config.show_navbar == true %}
+            {% include resume_links_list.html collection=site.data.home.resume_links %}
+	  {% endif %}
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <div class="site-nav-left"></div>
+        <div class="site-nav-right"></div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+    
+      {{ content }}
+    
+    </div>
+  </main>
+
+
+

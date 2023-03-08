@@ -1,0 +1,70 @@
+Brian Runk
+brian@brianrunk.net
+
+Sr Director of Software Engineering
+Sparkfund
+Washington, DC
+Nov 2019 - present
+
+~ Senior-most staff member responsible for all things technical at Sparkfund.
+~ Led the adoption of a new software stack utilizing React, Phoenix/Elixir, and PostgresSQL.
+~ Managed the architecture and development of SparkOS, a platform to streamline the implementation of energy efficiency projects.
+~ Oversaw the design of Sparkfund’s Internet of Things (IoT) data pipeline, automated equipment assessment and ongoing monitoring.
+~ Introduced Agile methodologies into the Product Development Lifecycle, enabling a highly collaborative, cross-team project flow.
+~ Coordinated quarterly roadmaps with executives and stakeholders to ensure shared expectations on progress and predictable delivery dates.
+~ Established bi-weekly, cross-functional checkins organized around ongoing project tracks.
+~ Created an information management strategy, making data available for both operational needs and business intelligence.
+~ Instituted a review process for third-party software integrations and support for internal operations and tooling.
+~ Made time for the creation and updating of documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
+~ Responsible for budgets covering company-wide software expenses as well as development costs and staffing.for technical teams
+~ Took on all phases of hiring: drafting job postings, scheduling interviews, coordinating offers.
+~ Handled the team’s outsourced IT vendor relationships on a day-to-day and contract negotiation basis.
+~ Led upgrade of Sparkfund’s security posture, overhauling policies and instituting an SDLC to prepare for SOC1/SOC2 compliance.
+~ Produced documentation for due diligence related to investor financing and conducted the same review of potential acquisition.
+
+Engineering Manager
+Etsy
+Brooklyn, NY
+May 2016 – July 2019
+
+~ Built a diverse team that demonstrated consistent productivity, high morale and low turnover over a three year period.
+~ Introduced Agile processes to encourage a team-led, highly collaborative work environment with clear visibility on progress and predictable delivery dates.
+~ Managed the migration to a third-party email marketing platform. This involved the transfer of millions of data points, updated on a nightly basis as well as a highly-customized user experience for the internal marketing team.  Project handled an average send volume of 10 million emails per hour.
+~ Managed the migration of customer support to a third-party platform.  This system was included nightly and hourly data synchronization between Etsy’s internal system.  Created a highly customized, and uniform support experience for both customers and agents supporting an average of 2,000 per day.
+~ Launched the infrastructure required to enable Chat and Inbound Phone Support, extending availability to full 24 hour/ 7 day access.
+~ Developed and managed multiple applications to address Etsy’s unique business, including an A/B Testing interface for email marketing analysis and a tool for consolidating the process of vetting Etsy shops and sellers for featuring in marketing and media.
+~ Regularly coordinated yearly development plans with executive stake holders and partner teams, communicating regular progress against KPIs each quarter.
+
+Engineering Manager
+Constant Contact
+Waltham, MA
+Dec 2012 – Dec 2015
+
+~ Led the development & release of a rewrite of the company's main CRM app, with the team converting the code from Java to Ruby on Rails, simultaneous with a database overhaul from DB2 to an entirely new schema in MySQL
+~ Managed the migration of over 650,000 customers at regular intervals over a year and a half, each milestone marking an increase in customer data complexity and performance requirements
+~ Led a defect-reduction effort that marked a decline from over 300 to 34, with quality continuing to fall from an average of 25 released per month to a current low of 3
+~ Led the implementation of team-based Performance testing for Application Scaling and future Feature Development
+~ Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 engineers over 2 days down to 1 engineer in 2 hours
+~ Personally recruited and hired twenty engineers, building out a diverse, full-stack team. This including creating an Apprenticeship program designed to grow high-potential candidates into permanent employees. Developed conference talks & speaking opportunities for team members and public coding events.
+
+Manager of Software Development
+America’s Test Kitchen
+Brookline, MA
+November 2010 – November 2012
+
+~ Directed the hiring and day-to-day work of engineers, contractors and partner firms while establishing associated team processes and communications practices.
+~ Managed the development of www.onlinecookingschool.com, using Ruby on Rails and Backbone.js, resulting in the best retention of any product launched in company history.  Developed the interactive instructional framework entirely in HTML5 & Javascript.
+~ Coordinated integrations with third-party applications within the Cooking School site, including support for online discussions, customer support, internal application messaging, payment processing, subscription management and the hosting and display of instructional videos.
+~ Oversaw the setup of hosting and administration of the site's overall metrics, individual customer tracking and A/B testing.
+~ Led the redesign and technical overhaul of three individual sites (Cooks Illustrated, Cook’s Country, America’s Test Kitchen), unifying the design and application framework 
+~ Oversaw the migration of over two million users across multiple sites and subscription plans, from a third-party payment processor and user administration system into a unified database with multi-tiered membership and single sign on capabilities.
+
+Seventeen additional years of engineering and leadership experience
+1994 – 2010
+
+Lieutenant, United States Coast Guard
+1990-1994
+
+
+Bachelor of Arts, Language & Literature
+St Mary's College of Maryland, 1990

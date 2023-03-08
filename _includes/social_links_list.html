@@ -1,0 +1,6 @@
+  {% for social_item in include.collection %}
+    <a href="{{ social_item.url }}" target="new">
+      <img class="site-nav-icon" src="/assets/images/{{ social_item.img }}" alt="{{ social_item.alt_txt  }}">
+    </a>
+  {% endfor %}
+

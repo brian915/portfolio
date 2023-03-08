@@ -1,0 +1,57 @@
+---
+layout: default
+---
+ 
+  <header class="site-head">
+    <div class="container">
+
+      <div class="site-mast">
+        <div class="site-mast-left">
+        </div>
+        <div class="site-mast-right">  
+	  {% if site.theme_config.show_navbar == true %}
+            {% include resume_links_list.html collection=site.data.home.resume_links %}
+	  {% endif %}
+        </div>
+      </div>
+
+      <div class="site-banner">
+        <h1 class="site-banner-title">{{ site.title }}</h1>
+        {% if site.theme_config.show_description == true %}
+          <p class="site-banner-desc">
+          {{ site.description }}
+        </p>
+        {% endif %}
+      </div>
+    
+      <nav class="site-nav">
+        <div class="site-nav-left"></div>
+        <div class="site-nav-right"></div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+    
+      {{ content }}
+    
+      {% if site.theme_config.show_pages == true %}
+        {% include section_block.html collection=site.data.home.page_entries %}
+      {% endif %}
+  
+      {% if site.theme_config.show_blog == true %}
+        <h2>{{ site.theme_config.home.title_blog }}</h2>
+        {% include post_list.html %}
+      {% endif %}
+    
+      {% if site.theme_config.show_old_projects == true %}
+        <h2>{{ site.theme_config.home.title_old_projects }}</h2>
+        {% include card_list.html collection=site.data.home.old_project_entries %}
+      {% endif %}
+
+    </div>
+  </main>
+
+
