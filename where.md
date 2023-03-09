@@ -1,4 +1,5 @@
 ---
+permalink: /where.html
 layout: page
 title: Where
 ---

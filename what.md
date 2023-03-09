@@ -1,4 +1,5 @@
 ---
+permalink: /what.html
 layout: page
 title: What
 ---
