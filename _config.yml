@@ -29,7 +29,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 ##???
 permalink: /:slug
-favicon: "./logo.png" # relative path to site's favicon
+favicon: "./favicon" # relative path to site's favicon
 github_username:  brian915
 
 #or remote-theme:?

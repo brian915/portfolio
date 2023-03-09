@@ -1,9 +1,9 @@
 
 <section class="post-feed">
   {% for post_item in include.collection %}
-  <a class="post-card" href="/{{ post_item.url }}/">
+  <a class="post-card" href="{{ post_item.url }}/">
     <header class="post-card-header">
-      <div class="post-card-image" style="background-image: url(/assets/images/{{ post_item.img }}"></div>
+      <div class="post-card-image" style="background-image: url(assets/images/{{ post_item.img }}"></div>
       <h2 class="post-card-title">{{ post_item.title }}</h2>
     </header>
     <section class="post-card-excerpt">
@@ -11,7 +11,6 @@
         {{ post_item.desc }}
       {% endif %}
     </section>
-    <!-- try removing to see how the layout is effected -->
     <footer class="post-card-footer">
       <div class="post-card-footer-left">
 	<div class="post-card-avatar">
@@ -24,7 +23,6 @@
 	</div>
       </div>
     </footer>
-    <!--- end possible remove block -->
   </a>
   {% endfor %}
 </section>    
