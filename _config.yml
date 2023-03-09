@@ -24,7 +24,8 @@ author: Brian Runk
 url: https://www.brianrunk.net
 description: Team Leadership • Technology Management
 
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+# this needs to be adjusted once you add your own domain
+baseurl: "/" # the subpath of your site, e.g. /blog
 
 ##???
 permalink: /:slug
