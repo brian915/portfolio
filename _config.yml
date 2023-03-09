@@ -24,8 +24,7 @@ author: Brian Runk
 url: https://www.brianrunk.net
 description: Team Leadership • Technology Management
 
-###???
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
 
 ##???
 permalink: /:slug
