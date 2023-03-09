@@ -1,4 +1,5 @@
 ---
+permalink: /who.html
 layout: page
 title: Who
 ---
