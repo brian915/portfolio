@@ -1,4 +1,5 @@
 ---
+permalink: /where.html
 layout: page
 title: Where
 ---
@@ -6,7 +7,8 @@ title: Where
 <article class="content">
   <h1 class="content-title">Where I'm headed ...</h1>
   <section class="content-body load-external-scripts">
-    <p>Currently interviewing, I am open to all intriguing opportunities.</p>
+    <p>Currently interviewing.</p>
+    <p>Open to all intriguing opportunities.</p>
 
     <!--kg-card-begin: markdown-->
     <h6 id="lets-discuss">Let's discuss:</h6>
