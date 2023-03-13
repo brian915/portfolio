@@ -7,22 +7,19 @@ title: What
   <h1 class="content-title">
     What I’ve done
     </h1>
-    <section class="content-body load-external-scripts">
-      <!--kg-card-begin: markdown-->
-      <h6 id="resume">Resume</h6>
-      <!--kg-card-end: markdown-->
-
-      <p>30+ years of digital leadership, my resume available for review below:</p>
-      
-      <!--kg-card-begin: markdown-->
-      <h6 id="contact">Contact:</h6>
-      <p><a href="mailto:brian@brianrunk.net">brian@brianrunk.net</a></p>
-      <!--kg-card-end: markdown-->
-
-<p>
-<strong>Sr Director of Software Engineering</strong>
-<strong>Sparkfund</strong>
-</p>
+    <section class="content-body">
+      <h6 id="resume">30+ years of digital leadership:</h6>
+      <ul class="summary">
+        <li><a href="#pos1">Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</a></li>
+      	<li><a href="#pos2">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</a></li>
+      	<li><a href="#pos3">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</a></li>
+      	<li><a href="#pos4">Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</a></li>
+	<li><a href="#pos5">but wait, there's more ...</a></li>
+      </ul> 
+<hr />
+<p class="summary"><a name="pos1">
+<strong>Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</strong>
+</a></p>
 <p>
 Nov 2019 - present    Washington, DC
 </p>
@@ -89,15 +86,9 @@ Produced documentation for due diligence related to investor financing and condu
 </strong>
 </li>
 </ul>
-<p>
-<strong>
-Engineering Manager
-</strong>
-   
-<strong>
-Etsy
-</strong>
-</p>
+<p class="summary"><a name="pos2">
+<strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</strong>
+</a></p>
 <p>
 May 2016 – July 2019   Brooklyn, NY
 </p>
@@ -124,15 +115,9 @@ Developed and managed multiple applications to address Etsy’s unique business,
 Regularly coordinated yearly development plans with executive stake holders and partner teams, communicating regular progress against KPIs each quarter.
 </li>
 </ul>
-<p>
-<strong>
-Engineering Manager
-</strong>
-   
-<strong>
-Constant Contact
-</strong>
-</p>
+<p class="summary"><a name="pos3">
+<strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</strong>
+</a></p>
 <p>
 Dec 2012 – Dec 2015   Waltham, MA
 </p>
@@ -156,15 +141,9 @@ Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 e
 Personally recruited and hired twenty engineers, building out a diverse, full-stack team. This including creating an Apprenticeship program designed to grow high-potential candidates into permanent employees. Developed conference talks &amp; speaking opportunities for team members and public coding events.
 </li>
 </ul>
-<p>
-<strong>
-Manager of Software Development
-</strong>
-   
-<strong>
-America’s Test Kitchen
-</strong>
-</p>
+<p class="summary"><a name="pos4">
+<strong>Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</strong>
+</a></p>
 <p>
 November 2010 – November 2012 Brookline, MA
 </p>
@@ -189,32 +168,26 @@ Oversaw the migration of over two million users across multiple sites and subscr
 <br>
 </li>
 </ul>
-<p>
+<p class="summary"><a name="pos5">
 <strong>
 Seventeen additional years of engineering and leadership experience
 </strong>
-</p>
+</a></p>
 <p>
 1994 – 2010
 </p>
 <p>
-<strong>
 Lieutenant, United States Coast Guard
-</strong>
 </p>
 <p>
 1990-1994
 </p>
 <p>
 <br>
-<strong>
 Bachelor of Arts, Language &amp; Literature
-</strong>
 </p>
 <p>
-<strong>
 St Mary's College of Maryland, 1990
-</strong>
 </p>
 </section>
 </article>

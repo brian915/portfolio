@@ -10,16 +10,13 @@ title: Where
     <p>Currently interviewing.</p>
     <p>Open to all intriguing opportunities.</p>
 
-    <!--kg-card-begin: markdown-->
     <h6 id="lets-discuss">Let's discuss:</h6>
     <p><a href="mailto:">brian@brianrunk.net</a></p>
-    <!--kg-card-end: markdown-->
 
-    <!--kg-card-begin: markdown-->
+
     <h6 id="calendly">Calendly:</h6>
-    <!--kg-card-end: markdown-->
 
-    <!--kg-card-begin: html-->
+
     <!-- Calendly inline widget begin -->
     <div class="calendly-inline-widget" data-url="https://calendly.com/brian-915?hide_gdpr_banner=1" style="position: relative;min-width:320px;height:630px;" data-processed="true">
       <div class="calendly-spinner">
@@ -31,9 +28,7 @@ title: Where
     </div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
     <!-- Calendly inline widget end --><!--kg-card-end: html--><!--kg-card-begin: markdown--><h6 id="contact">Contact:</h6>
-    <!--kg-card-end: markdown-->
 
-   <!--kg-card-begin: html-->
    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqdlgky" method="post">
      <fieldset id="fs-frm-inputs">
        <label for="full-name">Name</label>
@@ -114,6 +109,6 @@ title: Where
 				  text-transform: none;
 				}
     </style>
-    <!--kg-card-end: html-->
+
     </section>
 </article>

@@ -6,7 +6,6 @@ layout: default
 
       <div class="site-mast">
         <div class="site-mast-left">
-	  <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
         </div>
         <div class="site-mast-right">  
 	  {% if site.theme_config.show_navbar == true %}
@@ -16,8 +15,9 @@ layout: default
       </div>
 
       <nav class="site-nav">
-        <div class="site-nav-left"></div>
-        <div class="site-nav-right"></div>
+        <div class="site-nav-left"><a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+</div>
+        <div class="site-nav-right"><a href="mailto:brian@brianrunk.net">brian@brianrunk.net</a></div></div>
       </nav>
 
     </div>
