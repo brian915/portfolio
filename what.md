@@ -28,21 +28,13 @@ Nov 2019 - present    Washington, DC
 Senior-most staff member responsible for all things technical at Sparkfund.
 </li>
 <li>
-Led the adoption of a new software stack utilizing React
-<strong>
-, 
-</strong>
-Phoenix/Elixir, and PostgresSQL.
+Led the adoption of a new software stack utilizing React, Phoenix/Elixir, and PostgresSQL.
 </li>
 <li>
 Managed the architecture and development of SparkOS, a platform to streamline the implementation of energy efficiency projects.
 </li>
 <li>
-Oversaw the design of Sparkfund’s Internet of Things (IoT)
-<strong>
- 
-</strong>
-data pipeline, automated equipment assessment and ongoing monitoring.
+Oversaw the design of Sparkfund’s Internet of Things (IoT) data pipeline, automated equipment assessment and ongoing monitoring.
 </li>
 <li>
 Introduced Agile methodologies into the Product Development Lifecycle, enabling a highly collaborative, cross-team project flow.
@@ -63,27 +55,19 @@ Instituted a review process for third-party software integrations and support fo
 Made time for the creation and updating of documentation, testing, CI/CD, site alerting &amp; monitoring, metrics collection and reporting.
 </li>
 <li>
-Responsible for budgets covering company-wide software expenses as well as development costs and staffing.for technical teams
+Responsible for budgets covering company-wide software expenses as well as development costs and staffing.for technical teams.
 </li>
 <li>
 Took on all phases of hiring: drafting job postings, scheduling interviews, coordinating offers.
 </li>
 <li>
-Handled the team’s outsourced IT vendor relationships on a day-to-day and contract negotiation basis
-<em>
-.
-</em>
+Handled the team’s outsourced IT vendor relationships on a day-to-day and contract negotiation basis.
 </li>
 <li>
 Led upgrade of Sparkfund’s security posture, overhauling policies and instituting an SDLC to prepare for SOC1/SOC2 compliance.
 </li>
 <li>
-Produced documentation for due diligence related to investor financing and conducted the same review of potential acquisition
-<strong>
-<em>
-.
-</em>
-</strong>
+Produced documentation for due diligence related to investor financing and conducted the same review of potential acquisition.
 </li>
 </ul>
 <p class="summary"><a name="pos2">
