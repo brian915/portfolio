@@ -8,7 +8,7 @@ title: What
     What I’ve done
     </h1>
     <section class="content-body">
-      <h6 id="resume">30+ years of digital leadership:</h6>
+      <h6 class="resume-header">30+ years of digital leadership:</h6>
       <ul class="summary">
         <li><a href="#pos1">Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</a></li>
       	<li><a href="#pos2">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</a></li>
