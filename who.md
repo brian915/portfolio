@@ -10,9 +10,9 @@ title: Who
 
 <section class="content-body">
 
-<p>A team builder and technical leader</p>
-<p>I manage engineering organizations</p>
-<p>My goal is to create and support high-demand internet applications</p>
+<p>A team builder and technical leader.</p>
+<p>I manage engineering organizations.</p>
+<p>My goal is to create and support high-demand internet applications.</p>
 <p>I can help you establish dynamic processes and ship innovative products.</p>
 <hr />
 
@@ -26,7 +26,7 @@ title: Who
 <hr />
 <p>I build teams and systems that support individuals delivering quality work on tight deadlines.</p>
 
-<p>I'm passionate about working with creative folks in collaborative environments</p>
+<p>I'm passionate about working with creative folks in collaborative environments.</p>
 
 
 </section>
