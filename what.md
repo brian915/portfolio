@@ -107,19 +107,19 @@ Dec 2012 – Dec 2015   Waltham, MA
 </p>
 <ul>
 <li>
-Led the development &amp; release of a rewrite of the company's main CRM app, with the team converting the code from Java to Ruby on Rails, simultaneous with a database overhaul from DB2 to an entirely new schema in MySQL
+Led the development &amp; release of a rewrite of the company's main CRM app, with the team converting the code from Java to Ruby on Rails, simultaneous with a database overhaul from DB2 to an entirely new schema in MySQL.
 </li>
 <li>
-Managed the migration of over 650,000 customers at regular intervals over a year and a half, each milestone marking an increase in customer data complexity and performance requirements
+Managed the migration of over 650,000 customers at regular intervals over a year and a half, each milestone marking an increase in customer data complexity and performance requirements.
 </li>
 <li>
-Led a defect-reduction effort that marked a decline from over 300 to 34, with quality continuing to fall from an average of 25 released per month to a current low of 3
+Led a defect-reduction effort that marked a decline from over 300 to 34, with quality continuing to fall from an average of 25 released per month to a current low of 3.
 </li>
 <li>
-Led the implementation of team-based Performance testing for Application Scaling and future Feature Development
+Led the implementation of team-based Performance testing for Application Scaling and future Feature Development.
 </li>
 <li>
-Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 engineers over 2 days down to 1 engineer in 2 hours
+Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 engineers over 2 days down to 1 engineer in 2 hours.
 </li>
 <li>
 Personally recruited and hired twenty engineers, building out a diverse, full-stack team. This including creating an Apprenticeship program designed to grow high-potential candidates into permanent employees. Developed conference talks &amp; speaking opportunities for team members and public coding events.
