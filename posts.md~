@@ -1,0 +1,11 @@
+---
+permalink: /posts.html
+layout: page
+title: Posts
+---
+<article class="content">
+  <h1 class="content-title">Posts</h1>
+  <section class="content-body">
+    <hr />
+  </section>
+</article>
