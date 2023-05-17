@@ -7,7 +7,7 @@ title: Where
 <article class="content">
   <h1 class="content-title">Where I'm headed ...</h1>
   <section class="content-body load-external-scripts">
-    <p>Currently interviewing: March/April 2023.</p>
+    <p>Currently interviewing, Spring 2023.</p>
 
 <h6 id="lets-discuss">Let's discuss:</h6>
     <p><a href="mailto:">brian@brianrunk.net</a></p>
