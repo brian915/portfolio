@@ -1,28 +1,33 @@
 
 
 
-useful links:
-https://jekyllrb.com/
-https://jekyllrb.com/docs/
-https://jekyllrb.com/docs/github-pages/
-https://docs.github.com/en/pages
-https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+###useful links:
+
+		https://jekyllrb.com/
+		https://jekyllrb.com/docs/
+		https://jekyllrb.com/docs/github-pages/
+		https://docs.github.com/en/pages
+		https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 
 
-gh repo clone brian915/portfolio
-cd portfolio
-git status
-rbenv version
-rbenv install 3.2.3
-rbenv global 3.2.3
-bundle update jekyll 
-bundle install
-bundle exec jekyll serve
-brew upgradee rbenv
+###2024 update commands
 
-when in doubt, remove versions from Gemfile
-run bundle install
-and bundle update
+1. gh repo clone brian915/portfolio
+2. cd portfolio
+3. git status
+4. rbenv version
+5. rbenv install 3.2.3
+6. rbenv global 3.2.3
+7. bundle update jekyll 
+8. bundle install
+9. bundle exec jekyll serve
+10. brew upgradee rbenv
 
-bundle exec jekyll serve --livereload
+###when in doubt, remove versions from Gemfile
+
+>run bundle install
+and
+>bundle update
+
+`bundle exec jekyll serve --livereload`
 
