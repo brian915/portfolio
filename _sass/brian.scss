@@ -707,11 +707,20 @@ h6 {
 }
 
 .site-nav a, .site-mast a{
-    color:#777777;
+    color:#FFFFFF;
+    //color:#777777;
 }
 
 .site-mast a:hover{
-    color:#FFFFFF;
+    color:#26A8ED;
+    //color:#FFFFFF;
+    //color:#777777;
+    text-decoration:none;
+}
+.site-nav a:hover{
+    //color:#FFFFFF;
+    //color:#777777;
+    color:#26A8ED;
     text-decoration:none;
 }
 
@@ -722,14 +731,19 @@ h6 {
 .resume-icon {
     height: 50px;
     margin: -5px 15px 0 15px;
-    filter:invert(.3); 
+    //    filter:invert(.3);
+    filter:invert(.1); 
 }
 
 .resume-icon:hover{
-    -webkit-filter: invert(.1);
-   filter: invert(.1); 
+//    -webkit-filter: invert(.1);
+//    filter: invert(.1);
 
+    -webkit-filter: invert(.3);
+    filter: invert(.3);
+    filter:drop-shadow(4px 4px 4px  #26A8ED);
 }
+
 .resume-item:last-child {
     padding-right: 0;
 }
@@ -768,6 +782,7 @@ h6 {
     margin: 0 20px 0 -3px;
 }
 
+
 .site-nav-button {
     display: inline-block;
     padding: 5px 10px;
@@ -794,10 +809,16 @@ h6 {
 
 /* Where
 /* ---------------------------------------------------------- */
-.summary li{
-    list-style-type:'§';
+#resume a{
+    text-decoration:none;
+    color:#777777;
 }
 
+.summary li{
+   list-style-type:'§';
+}
+
+.pos a,
 .summary a{
     color:#777777;
 }
@@ -807,6 +828,31 @@ h6 {
     text-decoration:none;
 }
 
+.summary a:after{
+    content: ' \25C1';
+}
+
+.summary a:hover:after{
+    content: ' \25BC';
+    transition: color 1.5s;
+}
+
+.pos a:hover{
+    color:#26A8ED;
+    text-decoration:none;
+}
+
+.pos a:after {
+    content: " \25B3"; 
+    opacity: 1;
+    transition: opacity .2s, color 1.5s;
+}
+
+.pos a:hover:after {
+    content: " \25B2"; 
+    opacity: 1;
+    text-decoration:none;
+}
 
 
 /* Index
@@ -856,18 +902,49 @@ h6 {
 .post-card-excerpt {
     font-size: 1.6rem;
     line-height: 1.55em;
+    text-align: center;
 }
+
+#who{
+    filter:drop-shadow(3px 3px 3px  #FCAE1E);
+}
+
+#what{
+    filter:drop-shadow(2px 2px 2px  #DD571C);
+}
+
+#where{
+    filter:drop-shadow(2px 2px 2px  #ED820E);
+}
+
 
 .post-card-image {
     margin: 0 0 10px 0;
     width: auto;
     height: 200px;
     background: no-repeat center center;
-            /* 
-	   background: var(--color-secondary) no-repeat center center;
-	   background-size: cover;
-	 */
+
+    //uncommented these two lines  - either keep or delete
+    background: var(--color-secondary) no-repeat center center;
+    background-size: cover;
+
 }
+
+#who, #what, #where{
+    &.post-card-image:hover{
+	filter:drop-shadow(4px 4px 4px  #26A8ED);
+    }
+}
+
+
+a.post-card:hover{
+    color:#26ABED;
+}
+
+.post-card:hover{
+    color:#26ABED;
+}
+
 
 .post-card-footer {
     display: flex;

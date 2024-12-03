@@ -8,7 +8,7 @@ title: What
     What I’ve done
     </h1>
     <section class="content-body">
-      <h6 id="resume">30+ years of digital leadership:</h6>
+      <h6>30+ years of digital leadership:</h6>
       <ul class="summary">
         <li><a href="#pos1">Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</a></li>
       	<li><a href="#pos2">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</a></li>
@@ -17,8 +17,8 @@ title: What
 	<li><a href="#pos5">but wait, there's more ...</a></li>
       </ul> 
 <hr />
-<p class="summary"><a name="pos1">
-<strong>Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</strong>
+<p class="pos"><a href="#resume" name="pos1">
+<strong>Sr. Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</strong>
 </a></p>
 <p>
 Nov 2019 - present    Washington, DC
@@ -86,7 +86,7 @@ Produced documentation for due diligence related to investor financing and condu
 </strong>
 </li>
 </ul>
-<p class="summary"><a name="pos2">
+<p class="pos"><a href="#resume" name="pos2">
 <strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</strong>
 </a></p>
 <p>
@@ -115,7 +115,7 @@ Developed and managed multiple applications to address Etsy’s unique business,
 Regularly coordinated yearly development plans with executive stake holders and partner teams, communicating regular progress against KPIs each quarter.
 </li>
 </ul>
-<p class="summary"><a name="pos3">
+<p class="pos"><a href="#resume" name="pos3">
 <strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</strong>
 </a></p>
 <p>
@@ -141,7 +141,7 @@ Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 e
 Personally recruited and hired twenty engineers, building out a diverse, full-stack team. This including creating an Apprenticeship program designed to grow high-potential candidates into permanent employees. Developed conference talks &amp; speaking opportunities for team members and public coding events.
 </li>
 </ul>
-<p class="summary"><a name="pos4">
+<p class="pos"><a href="#resume" name="pos4">
 <strong>Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</strong>
 </a></p>
 <p>
@@ -168,7 +168,7 @@ Oversaw the migration of over two million users across multiple sites and subscr
 <br>
 </li>
 </ul>
-<p class="summary"><a name="pos5">
+<p class="pos"><a href="#resume" name="pos5">
 <strong>
 Seventeen additional years of engineering and leadership experience
 </strong>
