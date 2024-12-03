@@ -905,6 +905,12 @@ h6 {
     text-align: center;
 }
 
+.post-card-action {
+    font-size: 1rem;
+    line-height: 1em;
+    text-align: right;
+}
+
 #who{
     filter:drop-shadow(3px 3px 3px  #FCAE1E);
 }
@@ -923,11 +929,6 @@ h6 {
     width: auto;
     height: 200px;
     background: no-repeat center center;
-
-    //uncommented these two lines  - either keep or delete
-    background: var(--color-secondary) no-repeat center center;
-    background-size: cover;
-
 }
 
 #who, #what, #where{

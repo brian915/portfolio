@@ -19,20 +19,23 @@ page_entries:
   - title: Who is Brian?
     id: who
     url: who
-    desc: I manage engineering organizations that deliver high-demand internet application
+    desc: I lead engineering organizations that deliver high-demand internet application
     img: lightning.png
-    
+    action: about
+	
   - title: What I’ve done
     id: what
     url: what
     desc: 30+ years of digital leadership, building applications, teams and cultures.
     img: whirlwind.png 	    
-
+    action: resume
+    
   - title: Where I'm headed ...
     id: where
     url: where
-    desc: Current interviewing, I am open to all intriguing opportunities.
+    desc: Considering VP/CTO roles with strong product focus at companies ready to scale.
     img: rising_sun.png
+    action: contact
     
 footer_entries:
   - title: linkedin

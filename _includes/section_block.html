@@ -11,6 +11,11 @@
         {{ post_item.desc }}
       {% endif %}
     </section>
+    <section class="post-card-excerpt">
+      {% if item.action != false %}
+        {{ post_item.action }}
+      {% endif %}
+    </section>
     <footer class="post-card-footer">
       <div class="post-card-footer-left">
 	<div class="post-card-avatar">
