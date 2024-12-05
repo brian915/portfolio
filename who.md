@@ -6,20 +6,25 @@ title: Who
 
 <article class="content">
 
+{% include social_links_list.html collection=site.data.home.social_entries %}
+
 <h1 class="content-title">Who is Brian?</h1>
 
 <section class="content-body">
 
-<p>A team builder and technical leader</p>
-<p>I manage engineering organizations</p>
-<p>My goal is to create and support high-demand internet applications</p>
-<p>I can help you establish dynamic processes and ship innovative products.</p>
+<ul class="summary">
+<li>Senior technology leader with extensive experience building and scaling engineering organizations.</li>
+<li>Proven track record in leading cross-functional teams and delivering timely technical solutions.</li>
+<li>Demonstrated success in rapid-growth environments</li>
+<li>Ready to deliver the next stage of results at a company near you!</li>
+</ul>
+
 <hr />
 
-<p>Specialties:</p>
-<ul>
-<li>Encouraging cross-team communication.</li>
+<p>Specializing In:</p>
+<ul class="summary">
 <li>Analyzing and adjusting organizations.</li>
+<li>Encouraging cross-departmental innovation.</li>
 <li>Recruiting talent &amp; building an inclusive culture.</li>
 </ul>
 

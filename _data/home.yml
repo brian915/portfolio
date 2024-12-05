@@ -1,4 +1,3 @@
-
 resume_links:
   - title: DOC
     url: brian_runk_resume.docx
@@ -21,15 +20,13 @@ page_entries:
     url: who
     desc: I lead engineering organizations that deliver high-demand internet application
     img: lightning.png
-    action: about
-	
+    action: resume 
   - title: What I’ve done
     id: what
     url: what
     desc: 30+ years of digital leadership, building applications, teams and cultures.
-    img: whirlwind.png 	    
-    action: resume
-    
+    img: whirlwind.png          
+    action: about
   - title: Where I'm headed ...
     id: where
     url: where
@@ -37,19 +34,24 @@ page_entries:
     img: rising_sun.png
     action: contact
     
-footer_entries:
+social_entries:
   - title: linkedin
-    url: https://linked.com/in/brianrunk
+    url: https://www.linked.com/in/brianrunk
     img: linkedin.svg
     alt_txt: LinkedIn
     
+  - title: github
+    url: https://github.com/brian915
+    img: github.svg
+    alt_txt: Github
+
   - title: instagram
     url: https://instagram.com/brian_915
     img: instagram.svg
     alt_txt: Instagram
 
-  - title: github
-    url: https://github.com/brian915
-    img: github.svg
-    alt_txt: Github
+  - title: spotify
+    url: https://open.spotify.com/user/brian915/playlists
+    img: spotify.svg
+    alt_txt: Spotify
 
