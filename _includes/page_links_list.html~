@@ -1,0 +1,8 @@
+    {% for page_item in include.collection %}
+         <div id="page-link" class="page-item{% if page_item.url == page.url %}-active{% endif %}">
+	    <a href="{{ page_item.url }}">{{ page_item.title }}</a>
+	 </div>
+     {% endfor %}
+
+
+

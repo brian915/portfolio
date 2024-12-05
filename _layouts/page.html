@@ -6,7 +6,13 @@ layout: default
 
       <div class="site-mast">
         <div class="site-mast-left">
-        </div>
+	  <ul>
+	  {% if site.theme_config.show_navbar == true %}
+	    {% include page_links_list.html collection=site.data.home.page_links %}
+	  {% endif %}
+	  </ul>
+
+	</div>
         <div class="site-mast-right">  
 	  {% if site.theme_config.show_navbar == true %}
             {% include resume_links_list.html collection=site.data.home.resume_links %}

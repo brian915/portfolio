@@ -1,4 +1,14 @@
 resume_links:
+  - title: HOME
+    url: index.html
+  - title: WHO
+    url: who.html
+  - title: WHAT
+    url: what.html
+  - title: WHERE
+    url: where.html
+    
+resume_links:
   - title: DOC
     url: brian_runk_resume.docx
     img: doc.png
