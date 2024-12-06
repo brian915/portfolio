@@ -6,11 +6,6 @@ layout: default
 
       <div class="site-mast">
         <div class="site-mast-left">
-	  <ul>
-	  {% if site.theme_config.show_navbar == true %}
-	    {% include page_links_list.html collection=site.data.home.page_links %}
-	  {% endif %}
-	  </ul>
 
 	</div>
         <div class="site-mast-right">  
@@ -21,8 +16,14 @@ layout: default
       </div>
 
       <nav class="site-nav">
-        <div class="site-nav-left"><a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
-</div>
+        <div class="site-nav-left">
+         <div id="page-link" class="page-link">
+	   <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+	 </div>
+	 {% if site.theme_config.show_navbar == true %}
+	    {% include page_links_list.html collection=site.data.home.page_links %}
+	  {% endif %}
+	</div>
         <div class="site-nav-right"><a href="mailto:brian@brianrunk.net">brian@brianrunk.net</a></div></div>
       </nav>
 
