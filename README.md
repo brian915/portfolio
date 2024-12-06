@@ -33,7 +33,7 @@
 >
 > bundle exec jekyll serve
 >
-> brew upgradee rbenv
+> brew upgrade rbenv
 
 ### when in doubt, remove versions from Gemfile
 
