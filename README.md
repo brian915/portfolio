@@ -1,8 +1,10 @@
-#(BrianRunk.net)[https://brianrunk.net]
-##My Resume/About Me/Contact Pages
-###a standard, static Jekyll site hosted on Github Pages.
+## My Resume/About Me/Contact Pages
 
-###useful links:
+**[BrianRunk.net](https://brianrunk.net)**
+
+### a standard, static Jekyll site hosted on Github Pages.
+
+### useful links:
 
 - https://jekyllrb.com/
 - https://jekyllrb.com/docs/
@@ -11,7 +13,7 @@
 - https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 
 
-###2024 update commands
+### 2024 update commands
 
 1. gh repo clone brian915/portfolio
 2. cd portfolio
@@ -24,11 +26,17 @@
 9. bundle exec jekyll serve
 10. brew upgradee rbenv
 
-###when in doubt, remove versions from Gemfile
+### when in doubt, remove versions from Gemfile
 
->run bundle install
+> run bundle install
 and
->bundle update
+> bundle update
 
-`bundle exec jekyll serve --livereload`
+> `bundle exec jekyll serve --livereload`
+
+### when updating a long neglected gh-pages branch
+1. > git switch gh-pages
+2. > git merge -s recursive -X theirs origin main
+3. > git push
+4. > git switch main
 
