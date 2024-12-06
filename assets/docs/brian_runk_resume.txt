@@ -1,85 +1,63 @@
-BRIAN RUNK
+RIAN RUNK
 brian@brianrunk.net
-https://brianrunk.net
-https://linkedin.com/in/brianrunk
 
+- Senior technology leader with extensive experience building and scaling engineering organizations.
+- Proven track record in leading cross-functional teams and delivering innovative technical solutions.
+- Demonstrated success in rapid-growth environments
+- Ready to deliver the next stage of results at a company near you!
+
+Director of Technology, Research & Development
+FINRA
+Nov 2023-Present
+
+- Lead FINRA's R&D program, overseeing a $3M annual budget.
+- Guide projects exploring emerging technologies ranging from graph database investigations to machine learning research and LLM-related efforts.
+- Transformed program operations through standardization, with a resulting increase of 25% in projects and participation.
+- Manage a coaching staff of senior technologists and project teams including programmers, data scientists and product specialists, supporting 8-10 research projects at any given time.
+- Coordinate executive review of R&D proposals, aligning technical innovation with regulatory strategies.
+- Present monthly findings to 250+ attendees, driving technology adoption and innovation across the organization.
+
+Sr Director of Software Engineering
 Sparkfund
-Sr Director of Software Engineering	
-Washington, DC
-Nov 2019 - Mar 2023			
+Nov 2019-Mar 2023
 
- - Senior-most Engineering leader responsible for all technical leadership at Sparkfund.
- - Led the adoption of a new software stack utilizing React, Phoenix/Elixir, and PostgreSQL.
- - Managed the architecture and development of SparkOS, a platform to streamline the implementation of energy efficiency projects.
- - Oversaw the design of Sparkfund’s Internet of Things (IoT) data pipeline, automated equipment assessment and ongoing monitoring.
- - Introduced Agile Methodologies into the Software Development Lifecycle (SDLC), enabling a highly collaborative, cross-team project flow.
- - Coordinated quarterly roadmap reviews with executives and stakeholders for strategic planning and updates.
- - Established bi-weekly, cross-functional checkins organized around ongoing project tracks.
- - Created an information management strategy, making data available for both operational needs and business intelligence.
- - Instituted a review process for third-party software integrations and support for internal operations and tooling.
- - Incorporated the creation and updating of documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
- - Responsible for budgets covering company-wide software expenses as well as development costs and staffing.for technical teams
- - Took on all phases of hiring: drafting job postings, scheduling interviews, coordinating offers.
- - Handled the team’s outsourced IT vendor relationships on a day-to-day and contract negotiation basis,
- - Led upgrade of Sparkfund’s security posture, overhauling policies and instituting an SDLC to prepare for SOC1/SOC2 compliance.
- - Produced documentation for due diligence related to investor financing and conducted the same review of potential acquisition.Engineering 
+- Senior engineering leader, implementing strategic roadmap and directing all technical initiatives.
+- Orchestrated the design and development of the full-stack SparkOS platform for clean energy projects.
+- Introduced Agile processes, KPIs for aligning teams’ work with company-wide goals and regular checkpoints to foster cross-departmental coordination.
+- Initiated practices for documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
+- Drove the upgrade of security posture and SDLC enhancements required for SOC1/SOC2 compliance.
+- Performed due diligence related to investor financing and potential M&A activity.
 
-Etsy
-Manager			
-May 2016 – July 2019			
-Brooklyn, NY
-
- - Built a diverse team of over twenty software engineers
- - Maintained consistent productivity, high morale and low turnover over a tumultuous three-year period.
- - Introduced Agile processes to encourage a team-led, highly collaborative work environment with clear visibility on progress and predictable delivery dates.
- - Managed the migration to a third-party email marketing platform. This involved the transfer of millions of data points, updated on a nightly basis.
- - Team developed a highly-customized user experience for the internal marketing team.  Project handled an average send volume of 10 million emails per hour.
- - Managed the migration of customer support to a third-party platform.  This system was included nightly and hourly data synchronization between Etsy’s internal system.
- - Helped create a highly customized, and uniform support experience for both customers and agents supporting an average of 2,000 per day.
-Launched the infrastructure required to enable Chat and Inbound Phone Support, extending availability to full 24 hour/ 7 day access.
- - Developed and managed multiple applications to address Etsy’s two-sided marketplace.
- - Regularly coordinated yearly development plans with executive stake holders and partner teams, communicating regular progress against KPIs each quarter.
-
-Constant Contact
 Engineering Manager
-Waltham, MA				 
-Dec 2012 – Dec 2015			
+Etsy
+May 2016-July 2019
 
- - Personally recruited over twenty engineers, building out a diverse, full-stack team. 
- - Led the development & release of a rewrite of the company's main CRM app, with the team converting the code from Java to Ruby on Rails, simultaneous with a database overhaul from DB2 to an entirely new schema in MySQL
- - Managed the migration of over 650,000 customers at regular intervals over a year and a half, each milestone marking an increase in customer data complexity and scalability.
- - Initiated a defect-reduction effort that marked a decline from over 300 issues to 34, with quality continuing to fall from an average of 25 released per month to a current low of 3
- - Led the implementation of team-based Performance testing for Application Scaling and future Feature Development
- - Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 engineers over 2 days down to 1 engineer in 2 hours
- - Created an Apprenticeship program designed to grow high-potential candidates into permanent employees.
- - Developed conference talks & speaking opportunities for team members and public coding events.
+- Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.
+- Planned annual deliveries with executive stakeholders, set clear and measurable objectives and consistently met or exceeded targets.
+- Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.
+- Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.
 
-America’s Test Kitchen 
+Engineering Manager
+Constant Contact
+Dec 2012-Dec 2015
+
+- Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months.
+- Championed the creation of a continuous delivery pipeline, significantly reducing deployment overhead and complexity.
+- Recruited over twenty engineers, building out a diverse, full-stack team.
+- Created apprenticeship program to identify and grow high-potential candidates, often from less-traditional backgrounds in the tech industry.
+- Instituted quality improvement effort, eliminating a defect backlog over over 300 issues and cutting the rate of defect introduction in new software by 80%.
+
 Manager of Development
-Brookline, MA		
-November 2010 – November 2012	
+America's Test Kitchen
+Nov 2010-Nov 2012
 
- - Directed the hiring and day-to-day work of engineers, contractors and partner firms while establishing associated team processes and communications practices.
- - Managed the development of www.onlinecookingschool.com, resulting in the best retention of any product launched in company history.
-Developed the interactive instructional framework.
- - Coordinated integrations with third-party applications within the Cooking School site.
- - Led the redesign and technical overhaul of three individual sites (Cooks Illustrated, Cook’s Country, America’s Test Kitchen), unifying the design and application framework.
- - Oversaw the migration of over two million users across multiple sites and subscription plans, from a third-party payment processor and user administration system into a unified database with multi-tiered membership and single sign on capabilities.
+- Led creation of an online cooking school, achieving highest retention of any product in company history.
+- Managed migration of 2M+ users across multiple sites, featuring a unified database and single sign-on.
+- Architected the technical overhaul of three consumer websites, standardizing design and application framework.
 
-17 additional years of internet engineering and leadership experience.	
+17 additional years of engineering and leadership experience.
 
 Lieutenant, United States Coast Guard
 
 Bachelor of Arts, Language & Literature
 St Mary's College of Maryland
-
-Programming Experience:
-AWS, Heroku, Java, Javascript, React.js, Ruby on Rails, Scripting, SQL, PL-SQL, PostgreSQL, XML/XSL
-Leadership and Management:
-Budgeting, KPI Monitoring, Leadership, Resource Allocation, Stakeholder Engagement, Strategic Planning, Team Management, Vendor Management
-Software Development Practices:
-Agile Methodologies, Continuous Integration/Continuous Deployment (CI/CD), DevOps, Software Development Lifecycle (SDLC)
-Technical Architecture:
-Big Data, Cloud Computing, Cybersecurity, Distributed Systems, Integrations
-Product Development Lifecycle:
-Discovery & Design, Innovation, Performance Metrics, Product Management, Quality Assurance (QA), Roadmapping, Scalability

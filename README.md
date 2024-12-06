@@ -1,13 +1,14 @@
-
-
+#(BrianRunk.net)[https://brianrunk.net]
+##My Resume/About Me/Contact Pages
+###a standard, static Jekyll site hosted on Github Pages.
 
 ###useful links:
 
-		https://jekyllrb.com/
-		https://jekyllrb.com/docs/
-		https://jekyllrb.com/docs/github-pages/
-		https://docs.github.com/en/pages
-		https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+- https://jekyllrb.com/
+- https://jekyllrb.com/docs/
+- https://jekyllrb.com/docs/github-pages/
+- https://docs.github.com/en/pages
+- https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 
 
 ###2024 update commands
