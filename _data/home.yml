@@ -1,4 +1,13 @@
-
+page_links:
+  - title: HOME
+    url: index.html
+  - title: WHO
+    url: who.html
+  - title: WHAT
+    url: what.html
+  - title: WHERE
+    url: where.html
+    
 resume_links:
   - title: DOC
     url: brian_runk_resume.docx
@@ -17,33 +26,42 @@ resume_links:
     
 page_entries:
   - title: Who is Brian?
+    id: who
     url: who
-    desc: I manage engineering organizations that deliver high-demand applications.
+    desc: I lead engineering organizations that deliver high-demand internet application
     img: lightning.png
-    
+    action: resume 
   - title: What I’ve done
+    id: what
     url: what
     desc: 30+ years of digital leadership, building applications, teams and cultures.
-    img: whirlwind.png 	    
-
+    img: whirlwind.png          
+    action: about
   - title: Where I'm headed ...
+    id: where
     url: where
-    desc: Current interviewing, I am open to all intriguing opportunities.
+    desc: Considering VP/CTO roles with strong product focus at companies ready to scale.
     img: rising_sun.png
+    action: contact
     
-footer_entries:
+social_entries:
   - title: linkedin
-    url: https://linkedin.com/in/brianrunk
+    url: https://www.linked.com/in/brianrunk
     img: linkedin.svg
     alt_txt: LinkedIn
     
+  - title: github
+    url: https://github.com/brian915
+    img: github.svg
+    alt_txt: Github
+
   - title: instagram
     url: https://instagram.com/brian_915
     img: instagram.svg
     alt_txt: Instagram
 
-  - title: github
-    url: https://github.com/brian915
-    img: github.svg
-    alt_txt: Github
+  - title: spotify
+    url: https://open.spotify.com/user/brian915/playlists
+    img: spotify.svg
+    alt_txt: Spotify
 

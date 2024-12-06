@@ -1,6 +1,10 @@
-  {% for social_item in include.collection %}
-    <a href="{{ social_item.url }}" target="new">
-      <img class="social-icon" src="/assets/images/{{ social_item.img }}" alt="{{ social_item.alt_txt  }}">
-    </a>
-  {% endfor %}
+{% for social_item in include.collection %}
+<a href="{{ social_item.url }}" target="new" class="social-icon-link"><img class="social-icon" src="/assets/images/{{ social_item.img }}" alt="{{ social_item.alt_txt  }}"></a>
+{% endfor %}
+
+
+
+
+
+
 
