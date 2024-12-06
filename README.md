@@ -15,16 +15,16 @@
 
 ### 2024 update commands
 
-1. gh repo clone brian915/portfolio
-2. cd portfolio
-3. git status
-4. rbenv version
-5. rbenv install 3.2.3
-6. rbenv global 3.2.3
-7. bundle update jekyll 
-8. bundle install
-9. bundle exec jekyll serve
-10. brew upgradee rbenv
+> gh repo clone brian915/portfolio
+> cd portfolio
+> git status
+> rbenv version
+> rbenv install 3.2.3
+> rbenv global 3.2.3
+> bundle update jekyll 
+> bundle install
+> bundle exec jekyll serve
+> brew upgradee rbenv
 
 ### when in doubt, remove versions from Gemfile
 
@@ -35,8 +35,8 @@ and
 > `bundle exec jekyll serve --livereload`
 
 ### when updating a long neglected gh-pages branch
-1. > git switch gh-pages
-2. > git merge -s recursive -X theirs origin main
-3. > git push
-4. > git switch main
+> git switch gh-pages
+> git merge -s recursive -X theirs origin main
+> git push
+> git switch main
 
