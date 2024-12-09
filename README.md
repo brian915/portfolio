@@ -62,6 +62,6 @@ Uses a YAML file to configure local settings.
 
 I use this for global configurations across multiple scripts in ~/bin/.
 A copy is kept here for reference or possible local configuration.
-
+It could easily be added to _config.yml, possible future improvement 
 # FORMAT CONTENT
 # EXPLAIN WHY I CREATED MY OWN IF THIS ALREADY EXISTS
