@@ -5,189 +5,102 @@ title: What
 ---
 <article class="content">
   <h1 class="content-title">
-    What I’ve done
-    </h1>
+    What I’ve done</h1>
     <section class="content-body">
       <h6>30+ years of digital leadership:</h6>
       <ul class="summary">
-        <li><a href="#pos1">Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</a></li>
-      	<li><a href="#pos2">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</a></li>
-      	<li><a href="#pos3">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</a></li>
-      	<li><a href="#pos4">Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</a></li>
-	<li><a href="#pos5">but wait, there's more ...</a></li>
+        <li><a href="#pos1">Director of Research & Development&nbsp;&nbsp;-&nbsp;&nbsp;FINRA</a></li>
+        <li><a href="#pos2">Sr Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</a></li>
+      	<li><a href="#pos3">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</a></li>
+      	<li><a href="#pos4">Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</a></li>
+      	<li><a href="#pos5">Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</a></li>
+	<li><a href="#pos6">but wait, there's more ...</a></li>
       </ul> 
 <hr />
-<p class="pos"><a href="#resume" name="pos1">
-<strong>Sr. Director of Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</strong>
-</a></p>
-<p>
-Nov 2019 - present    Washington, DC
-</p>
-<ul>
-<li>
-Senior-most staff member responsible for all things technical at Sparkfund.
-</li>
-<li>
-Led the adoption of a new software stack utilizing React
-<strong>
-, 
-</strong>
-Phoenix/Elixir, and PostgresSQL.
-</li>
-<li>
-Managed the architecture and development of SparkOS, a platform to streamline the implementation of energy efficiency projects.
-</li>
-<li>
-Oversaw the design of Sparkfund’s Internet of Things (IoT)
-<strong>
- 
-</strong>
-data pipeline, automated equipment assessment and ongoing monitoring.
-</li>
-<li>
-Introduced Agile methodologies into the Product Development Lifecycle, enabling a highly collaborative, cross-team project flow.
-</li>
-<li>
-Coordinated quarterly roadmaps with executives and stakeholders to ensure shared expectations on progress and predictable delivery dates.
-</li>
-<li>
-Established bi-weekly, cross-functional checkins organized around ongoing project tracks.
-</li>
-<li>
-Created an information management strategy, making data available for both operational needs and business intelligence.
-</li>
-<li>
-Instituted a review process for third-party software integrations and support for internal operations and tooling.
-</li>
-<li>
-Made time for the creation and updating of documentation, testing, CI/CD, site alerting &amp; monitoring, metrics collection and reporting.
-</li>
-<li>
-Responsible for budgets covering company-wide software expenses as well as development costs and staffing.for technical teams
-</li>
-<li>
-Took on all phases of hiring: drafting job postings, scheduling interviews, coordinating offers.
-</li>
-<li>
-Handled the team’s outsourced IT vendor relationships on a day-to-day and contract negotiation basis
-<em>
-.
-</em>
-</li>
-<li>
-Led upgrade of Sparkfund’s security posture, overhauling policies and instituting an SDLC to prepare for SOC1/SOC2 compliance.
-</li>
-<li>
-Produced documentation for due diligence related to investor financing and conducted the same review of potential acquisition
-<strong>
-<em>
-.
-</em>
-</strong>
-</li>
-</ul>
-<p class="pos"><a href="#resume" name="pos2">
-<strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</strong>
-</a></p>
-<p>
-May 2016 – July 2019   Brooklyn, NY
-</p>
-<ul>
-<li>
-Built a diverse team that demonstrated consistent productivity, high morale and low turnover over a three year period.
-</li>
-<li>
-Introduced Agile processes to encourage a team-led, highly collaborative work environment with clear visibility on progress and predictable delivery dates.
-</li>
-<li>
-Managed the migration to a third-party email marketing platform. This involved the transfer of millions of data points, updated on a nightly basis as well as a highly-customized user experience for the internal marketing team. &nbsp;Project handled an average send volume of 10 million emails per hour.
-</li>
-<li>
-Managed the migration of customer support to a third-party platform. &nbsp;This system was included nightly and hourly data synchronization between Etsy’s internal system. &nbsp;Created a highly customized, and uniform support experience for both customers and agents supporting an average of 2,000 per day.
-</li>
-<li>
-Launched the infrastructure required to enable Chat and Inbound Phone Support, extending availability to full 24 hour/ 7 day access.
-</li>
-<li>
-Developed and managed multiple applications to address Etsy’s unique business, including an A/B Testing interface for email marketing analysis and a tool for consolidating the process of vetting Etsy shops and sellers for featuring in marketing and media.
-</li>
-<li>
-Regularly coordinated yearly development plans with executive stake holders and partner teams, communicating regular progress against KPIs each quarter.
-</li>
-</ul>
-<p class="pos"><a href="#resume" name="pos3">
-<strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</strong>
-</a></p>
-<p>
-Dec 2012 – Dec 2015   Waltham, MA
-</p>
-<ul>
-<li>
-Led the development &amp; release of a rewrite of the company's main CRM app, with the team converting the code from Java to Ruby on Rails, simultaneous with a database overhaul from DB2 to an entirely new schema in MySQL
-</li>
-<li>
-Managed the migration of over 650,000 customers at regular intervals over a year and a half, each milestone marking an increase in customer data complexity and performance requirements
-</li>
-<li>
-Led a defect-reduction effort that marked a decline from over 300 to 34, with quality continuing to fall from an average of 25 released per month to a current low of 3
-</li>
-<li>
-Led the implementation of team-based Performance testing for Application Scaling and future Feature Development
-</li>
-<li>
-Instituted a Continuous Delivery Pipeline, reducing deployment overhead from 6 engineers over 2 days down to 1 engineer in 2 hours
-</li>
-<li>
-Personally recruited and hired twenty engineers, building out a diverse, full-stack team. This including creating an Apprenticeship program designed to grow high-potential candidates into permanent employees. Developed conference talks &amp; speaking opportunities for team members and public coding events.
-</li>
-</ul>
-<p class="pos"><a href="#resume" name="pos4">
-<strong>Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</strong>
-</a></p>
-<p>
-November 2010 – November 2012 Brookline, MA
-</p>
-<ul>
-<li>
-Directed the hiring and day-to-day work of engineers, contractors and partner firms while establishing associated team processes and communications practices.
-</li>
-<li>
-Managed the development of www.onlinecookingschool.com, using Ruby on Rails and Backbone.js, resulting in the best retention of any product launched in company history. &nbsp;Developed the interactive instructional framework entirely in HTML5 &amp; Javascript.
-</li>
-<li>
-Coordinated integrations with third-party applications within the Cooking School site, including support for online discussions, customer support, internal application messaging, payment processing, subscription management and the hosting and display of instructional videos.
-</li>
-<li>
-Oversaw the setup of hosting and administration of the site's overall metrics, individual customer tracking and A/B testing.
-</li>
-<li>
-Led the redesign and technical overhaul of three individual sites (Cooks Illustrated, Cook’s Country, America’s Test Kitchen), unifying the design and application framework.
-</li>
-<li>
-Oversaw the migration of over two million users across multiple sites and subscription plans, from a third-party payment processor and user administration system into a unified database with multi-tiered membership and single sign on capabilities.
-<br>
-</li>
-</ul>
-<p class="pos"><a href="#resume" name="pos5">
-<strong>
-Seventeen additional years of engineering and leadership experience
-</strong>
-</a></p>
-<p>
-1994 – 2010
-</p>
-<p>
-Lieutenant, United States Coast Guard
-</p>
-<p>
-1990-1994
-</p>
-<p>
-<br>
-Bachelor of Arts, Language &amp; Literature
-</p>
-<p>
-St Mary's College of Maryland, 1990
-</p>
-</section>
+    <p class="pos"><a href="#resume" name="pos1">
+    <strong>Director of Research & Development Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;FINRA</strong></a></p>
+    <p>    
+    Nov 2023-Present
+    </p>   
+    <ul>
+	<li>Lead FINRA's R&D program, overseeing a $3M annual budget.</li>
+	<li>Guide projects exploring emerging technologies ranging from graph database investigations to machine learning research and LLM-related efforts.</li>
+	<li>Transformed program operations through standardization, with a resulting increase of 25% in projects and participation.</li>
+	<li>Manage a coaching staff of senior technologists and project teams including programmers, data scientists and product specialists, supporting 8-10 research projects at any given time.</li>
+	<li>Coordinate executive review of R&D proposals, aligning technical innovation with regulatory strategies.</li>
+	<li>Present monthly findings to 250+ attendees, driving technology adoption and innovation across the organization.</li>
+     </ul>
+     <p class="pos"><a href="#resume" name="pos2">
+     	<strong>Sr. Director Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;Sparkfund</strong></a>
+     </p>
+     <p>
+     Nov 2019-Mar 2023
+     </p>
+     <ul>
+	<li>Senior engineering leader, implementing strategic roadmap and directing all technical initiatives.</li>
+	<li>Orchestrated the design and development of the full-stack SparkOS platform for clean energy projects.</li>
+	<li>Introduced Agile processes, KPIs for aligning teams’ work with company-wide goals and regular checkpoints to foster cross-departmental coordination.</li>
+	<li>Initiated practices for documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.</li>
+	<li>Drove the upgrade of security posture and SDLC enhancements required for SOC1/SOC2 compliance.</li>
+	<li>Performed due diligence related to investor financing and potential M&A activity.</li>
+     </ul>
+
+     <p class="pos"><a href="#resume" name="pos3">
+     <strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Etsy</strong>
+     </a></p>
+     <p>
+     May 2016-July 2019
+     </p>
+     <ul>
+        <li>Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.</li>
+	<li>Planned annual deliveries with executive stakeholders, set clear and measurable objectives and consistently met or exceeded targets.</li>
+	<li>Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.</li>
+	<li>Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.</li>
+     </ul>
+     <p class="pos"><a href="#resume" name="pos4">
+     <strong>Engineering Manager&nbsp;&nbsp;-&nbsp;&nbsp;Constant Contact</strong>
+     </a></p>
+     <p>
+     Dec 2012-Dec 2015
+     </p>
+     <ul>
+        <li>Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.</li>
+        <li>Planned annual deliveries with executive stakeholders, set clear and measurable objectives and consistently met or exceeded targets.</li>
+	<li>Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.</li>
+	<li>Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.</li>
+     </ul>
+     <p class="pos"><a href="#resume" name="pos5">
+     <strong>Manager of Software Development&nbsp;&nbsp;-&nbsp;&nbsp;America’s Test Kitchen</strong>
+     </a></p>
+     <p>
+     Nov 2010-Nov 2012
+     </p>
+     <ul>
+        <li>Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.</li>
+	<li>Planned annual deliveries with executive stakeholders, set clear and measurable objectives and consistently met or exceeded targets.</li>
+	<li>Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.</li>
+	<li>Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.</li>
+     </ul>
+     <p class="pos"><a href="#resume" name="pos6">
+     <strong>
+     Seventeen additional years of engineering and leadership experience
+     </strong>
+     </a></p>
+     <p>
+     1994 – 2010
+     </p>
+     <p>
+     Lieutenant, United States Coast Guard
+     </p>
+     <p>
+     1990-1994
+     </p>
+     <p>
+     <br />
+     Bachelor of Arts, Language &amp; Literature
+     </p>
+     <p>
+     St Mary's College of Maryland, 1990
+     </p>
+   </section>
 </article>

@@ -52,3 +52,16 @@ and
 >
 > git switch main
 
+### Create Blog Post Script
+> create_blog_post.rb
+Usage: create_blog_post.rb [options] title.
+Generates a new blog file in the Posts directory a local Jekyll install in the format of #YEAR-MONTH-DAY-title.md
+
+Uses a YAML file to configure local settings.
+> local_config.yml
+
+I use this for global configurations across multiple scripts in ~/bin/.
+A copy is kept here for reference or possible local configuration.
+
+# FORMAT CONTENT
+# EXPLAIN WHY I CREATED MY OWN IF THIS ALREADY EXISTS
