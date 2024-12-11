@@ -55,6 +55,7 @@ class BlogPost
       new_file.puts "---"
       new_file.puts "layout: post"
       new_file.puts "title:  " + @formatted_blog_title
+      new_file.puts "published:  false"
       new_file.puts "---"
       new_file.close
     else
@@ -65,6 +66,7 @@ class BlogPost
     if File.exist?(@full_path_file_name)
       msg = "Success! Post created."  + "\n"
       msg += read_blog_post(@full_path_file_name)
+      msg += @blog_post_file_name.prepend('_posts/')
       print_msg(msg)
     else
       msg = "Blog post" + @formatted_blog_title + " not created"
