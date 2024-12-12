@@ -14,29 +14,29 @@ title: Where
     <p><a href="mailto:">brian@brianrunk.net</a></p>
 
 
-    <h6 id="calendly">Calendly:</h6>
-
+    <h6 id="calendly">Calendly Link:</h6>
 
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/brian-915?hide_gdpr_banner=1" style="position: relative;min-width:320px;height:630px;" data-processed="true">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/brian-915?hide_gdpr_banner=1" style="position: relative;min-width:320px;height:320px;" data-processed="true">
       <div class="calendly-spinner">
         <div class="calendly-bounce1"></div>
 	<div class="calendly-bounce2"></div>
 	<div class="calendly-bounce3"></div>
       </div>
-      <iframe src="https://calendly.com/brian-915?embed_domain=brianrunk.net&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="100%" height="100%" frameborder="0"></iframe>
+      <iframe src="https://calendly.com/brian-915?embed_domain=brianrunk.net&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="640px" height="320px" frameborder="1"></iframe>
     </div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
-    <!-- Calendly inline widget end --><!--kg-card-end: html--><!--kg-card-begin: markdown--><h6 id="contact">Contact:</h6>
-
-   <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqdlgky" method="post">
+    <!-- Calendly inline widget end --><!--kg-card-end: html--><!--kg-card-begin: markdown-->
+    <hr />
+    <h6 id="contact">Contact Form:</h6>
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqdlgky" method="post">
      <fieldset id="fs-frm-inputs">
-       <label for="full-name">Name</label>
+     <label for="full-name">Name</label>
        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
        <label for="email-address">Email</label>
        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
        <label for="message">Message</label>
-       <textarea rows="5" name="message" id="message" placeholder="Let's connect!" required=""></textarea>
+       <textarea rows="3" name="message" id="message" placeholder="Let's connect!" required=""></textarea>
        <input type="hidden" name="_subject" id="email-subject" value="Brian Runk .Net Contact Form Message">
        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div>
     </fieldset>
