@@ -26,7 +26,7 @@ page_entries:
   - title: Who is Brian?
     id: who
     url: who
-    desc: I lead engineering organizations that deliver high-demand internet application
+    desc: I lead engineering organizations that deliver high-demand internet applications.
     img: lightning.png
     action: resume 
   - title: What I’ve done
