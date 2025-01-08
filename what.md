@@ -17,14 +17,6 @@ title: What
 	<li><a href="#pos6">but wait, there's more ...</a></li>
       </ul> 
 <hr />
-BRIAN RUNK
-brian@brianrunk.net
-
-Senior technology leader driving organizational change and innovation.
-Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.
-Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.
-Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.
-
 <p class="pos"><a href="#resume" name="pos1">
     <strong>Director of Research & Development Software Engineering&nbsp;&nbsp;-&nbsp;&nbsp;FINRA</strong></a></p>
     <p>    
