@@ -13,17 +13,10 @@ title: Who
 <section class="content-body">
 
 <ul class="summary">
-Senior technology leader driving organizational change and innovation.
-Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.
-Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.
-Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.
-
-
-
-<li>Senior technology leader with extensive experience building and scaling engineering organizations.</li>
-<li>Proven track record in leading cross-functional teams and delivering timely technical solutions.</li>
-<li>Demonstrated success in rapid-growth environments</li>
-<li>Ready to deliver the next stage of results at a company near you!</li>
+<li>Senior technology leader driving organizational change and innovation.</li>
+<li>Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.</li>
+<li>Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.</li>
+<li>Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.</li>
 </ul>
 
 <hr />
