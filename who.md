@@ -18,22 +18,18 @@ title: Who
 <li>Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.</li>
 <li>Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.</li>
 </ul>
-
 <hr />
-
 <p>Specializing In:</p>
 <ul class="summary">
-<li>Analyzing and adjusting organizations.</li>
-<li>Encouraging cross-departmental innovation.</li>
-<li>Recruiting talent &amp; building an inclusive culture.</li>
+<p>Building effective organizations through careful evaluation and strategic change management.</p>
+<p>Connecting teams across departments to deliver innovative solutions.</p>
+<p>Creating engineering cultures where all talent thrives.</p>
 </ul>
-
 <hr />
-<p>I build teams and systems that support individuals delivering quality work on tight deadlines.</p>
-
-<p>I'm passionate about working with creative folks in collaborative environments.</p>
-
-
+<p>Core Focus:</p>
+<ul class="summary">
+<p>I build high-performance engineering teams that deliver complex technical transformations while developing technical leaders.</p>
+</ul>
 </section>
 
 </article>
