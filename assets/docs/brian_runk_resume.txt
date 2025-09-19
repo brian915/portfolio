@@ -1,58 +1,73 @@
 BRIAN RUNK
 brian@brianrunk.net
-
-Senior technology leader driving organizational change and innovation.
-Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.
-Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.
-Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.
+- Senior technology leader driving innovation and delivery.
+- Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.
+- Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.
+- Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.
 
 Director of Technology, Research & Development
 FINRA
 Nov 2023-Present
-Reimagined and streamlined R&D program operations to accelerate innovation across the enterprise.
-Lead FINRA's R&D program, overseeing a $3M annual budget.
-Guide projects exploring emerging technologies ranging from graph database investigations to machine learning research and LLM-related efforts.
-Transformed program operations through standardization, with a resulting increase of 25% in projects and participation.
-Manage a coaching staff of senior technologists and project teams including programmers, data scientists and product specialists, supporting 8-10 research projects at any given time.
-Coordinate executive review of R&D proposals, aligning technical innovation with regulatory strategies.
-Present monthly findings to 250+ attendees from across FINRA, driving the adoption of technology and promoting innovation across the organization.
+
+- Reimagined and streamlined R&D program operations to accelerate innovation across the enterprise.
+- Lead FINRA's R&D program, overseeing a $3M annual budget.
+- Guide projects exploring emerging technologies ranging from graph database investigations to machine learning research and LLM-related efforts.
+- Transformed program operations through standardization, with a resulting increase of 25% in projects and participation.
+- Manage a coaching staff of senior technologists and project teams including programmers, data scientists and product specialists
+- Coordinate executive review of R&D proposals, aligning technical innovation with regulatory strategies.
+- Present monthly findings to 250+ attendees from across FINRA, driving the adoption of technology and promoting innovation across the organization.
+- Generative AI/LLM-focused projects included the following topics:
+  - AI-Assisted Coding & the Software Development Lifecycle
+  - Commenting & Documentating to Legacy Code
+  - Summarizing Complex Documents
+  - Constructing Taxonomies from CMS Content
+  - Data Parsing and SQL Generation
+  - Generating Graph Databases from Disparate Documents
+  - Security Scanning of Internal and Third-party Software
+  - Orchestration of Complex Workflows
+  - Building Trainable Assistants (Agents)
+  - Designing Safe and Ethical Chatbots
+  - Establishing a Prompt Engineering Playbook
+  - Fine-Tuning Models for FINRA-specific Use Cases
 
 Sr Director of Software Engineering
 Sparkfund
 Nov 2019-Mar 2023
-Established engineering excellence from the ground up, implementing strategic processes and governance to enable rapid scaling.
-Senior engineering leader, implementing strategic roadmap and directing all technical initiatives.
-Orchestrated the design and development of the full-stack SparkOS platform for clean energy projects.
-Introduced Agile processes, KPIs for aligning teams’ work with company-wide goals and regular checkpoints to foster cross-departmental coordination.
-Initiated practices for documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
-Drove the upgrade of security posture and SDLC enhancements required for SOC1/SOC2 compliance.
-Performed due diligence related to investor financing and potential M&A activity.
+
+- Established engineering excellence from the ground up, implementing strategic processes and governance to enable rapid scaling.
+- Senior engineering leader, implementing strategic roadmap and directing all technical initiatives.
+- Orchestrated the design and development of the full-stack SparkOS platform for clean energy projects.
+- Introduced Agile processes,  KPIs for aligning team's work with company-wide goals and regular checkpoints to foster cross-departmental coordination.
+- Initiated practices for documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
+- Drove the upgrade of security posture and SDLC enhancements required for SOC1/SOC2 compliance.
+- Performed due diligence related to investor financing and potential M&A activity.
 
 Engineering Manager
 Etsy
 May 2016-July 2019
-Transformed fragmented engineering teams into a cohesive unit while modernizing critical customer-facing infrastructure.
-Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.
-Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.
-Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.
+
+- Transformed fragmented engineering teams into a cohesive unit while modernizing critical customer-facing infrastructure.
+- Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.
+- Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.
+- Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.
 
 Engineering Manager
 Constant Contact
 Dec 2012-Dec 2015
-Revitalized engineering culture and delivery capabilities while executing complex legacy system modernization.
-Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months.
-Recruited over twenty engineers, building out a diverse, full-stack team.
-Created apprenticeship program to identify and grow high-potential candidates, often from less-traditional backgrounds in the tech industry.
-Instituted quality improvement effort, eliminating a defect backlog of over 300 issues and cutting the rate of defect introduction in new software by 80%.
+
+- Revitalized engineering culture and delivery capabilities while executing complex legacy system modernization.
+- Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months.
+- Recruited over twenty engineers, building out a diverse, full-stack team.
+- Created apprenticeship program to identify and grow high-potential candidates, often from less-traditional backgrounds in the tech industry.
+- Instituted quality improvement effort, eliminating a defect backlog of over 300 issues and cutting the rate of defect introduction in new software by 80%.
 
 Manager of Development
 America's Test Kitchen
 Nov 2010-Nov 2012
-Led technical evolution from traditional media company to modern digital platform while unifying disparate systems.
-Led creation of an online cooking school, achieving highest retention of any product in company history.
-Managed migration of 2M+ users across multiple sites, featuring a unified database and single sign-on.
 
-17 additional years of engineering and leadership experience.
+- Led technical evolution from traditional media company to modern digital platform while unifying disparate systems.
+- Led creation of an online cooking school, achieving highest retention of any product in company history.
+- Managed migration of 2M+ users across multiple sites, featuring a unified database and single sign-on.
 
 Lieutenant, United States Coast Guard
 
