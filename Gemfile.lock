@@ -278,7 +278,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed (~> 0.12)
+  jekyll-feed (~> 0.17)
   jekyll-seo-tag
   titlecaser
 
