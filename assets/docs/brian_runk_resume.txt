@@ -1,75 +1,77 @@
 BRIAN RUNK
+Annapolis, Maryland
 brian@brianrunk.net
-- Senior technology leader driving innovation and delivery.
-- Track record of transforming engineering organizations through deliberate  talent development and complex technical transformations.
-- Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.
-- Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.
+linkedin.com/in/brianrunk
+
+Senior technology leader with expertise in aligning engineering work to business goals, delivering measurable outcomes at multi-million-user scale.
+Transformed organizations through improved communication cadence and process implementation, enabling predictable releases and increased quality.
+Modernized and unified customer platforms impacting millions of customers and supporting 10M+ interactions per hour with uptime ≥ 98%.
+Built diverse, high-performing teams through deliberate talent development and mentoring, maintaining retention during periods of rapid growth and change.
+
+Core Competencies
+
+- Technology Strategy
+- Product Roadmapping
+- Scaling Engineering Organizations
+- Program Leadership
+- Agile Delivery
+- Cloud Platforms
+- DevOps, CI/CD
+- Observability
+- Security, Compliance
+- Platform Migrations
+- Stack Modernization
+- Data Platforms
+- AI and ML Initiatives
+- SDLC Excellence
+- Executive Communication
+- Talent Development
 
 Director of Technology, Research & Development
 FINRA
-Nov 2023-Present
+November 2023 - July 2025
 
-- Reimagined and streamlined R&D program operations to accelerate innovation across the enterprise.
-- Lead FINRA's R&D program, overseeing a $3M annual budget.
-- Guide projects exploring emerging technologies ranging from graph database investigations to machine learning research and LLM-related efforts.
-- Transformed program operations through standardization, with a resulting increase of 25% in projects and participation.
-- Manage a coaching staff of senior technologists and project teams including programmers, data scientists and product specialists
-- Coordinate executive review of R&D proposals, aligning technical innovation with regulatory strategies.
-- Present monthly findings to 250+ attendees from across FINRA, driving the adoption of technology and promoting innovation across the organization.
-- Generative AI/LLM-focused projects included the following topics:
-  - AI-Assisted Coding & the Software Development Lifecycle
-  - Commenting & Documentating to Legacy Code
-  - Summarizing Complex Documents
-  - Constructing Taxonomies from CMS Content
-  - Data Parsing and SQL Generation
-  - Generating Graph Databases from Disparate Documents
-  - Security Scanning of Internal and Third-party Software
-  - Orchestration of Complex Workflows
-  - Building Trainable Assistants (Agents)
-  - Designing Safe and Ethical Chatbots
-  - Establishing a Prompt Engineering Playbook
-  - Fine-Tuning Models for FINRA-specific Use Cases
+- Streamlined R&D program with a $3M annual budget, sponsoring investigations that helped accelerate innovation across the enterprise.
+- Standardized proposal generation, reducing time from approval to kickoff and increasing projects and participation by 25%.
+- Doubled executive review cadence and raised approvals to 98% by linking topics to enterprise strategy.
+- Guided cross-functional teams supporting 8–10 concurrent research efforts, strengthening internal capability in graph, ML, and AI.
+- Presented monthly findings to 250+ stakeholders, driving adoption of new technology.
+- Directed AI-focused initiatives spanning SDLC improvements, LLM workflows, document summarization, and generative AI risks.
 
-Sr Director of Software Engineering
+Sr. Director of Software Engineering
 Sparkfund
-Nov 2019-Mar 2023
+August 2019 - March 2023
 
-- Established engineering excellence from the ground up, implementing strategic processes and governance to enable rapid scaling.
-- Senior engineering leader, implementing strategic roadmap and directing all technical initiatives.
-- Orchestrated the design and development of the full-stack SparkOS platform for clean energy projects.
-- Introduced Agile processes,  KPIs for aligning team's work with company-wide goals and regular checkpoints to foster cross-departmental coordination.
-- Initiated practices for documentation, testing, CI/CD, site alerting & monitoring, metrics collection and reporting.
-- Drove the upgrade of security posture and SDLC enhancements required for SOC1/SOC2 compliance.
-- Performed due diligence related to investor financing and potential M&A activity.
+- As senior-most engineering leader, implemented a multi-quarter roadmap with on-time delivery rate of 95%.
+- Oversaw development of the full-stack SparkOS platform, sharing previously siloed information between companies.
+- Introduced Agile processes and KPIs and fostered cross-departmental coordination.
+- Established CI/CD pipeline, increasing deployment frequency while lowering error rates.
+- Drove Sparkfund's first security audit, delivering SOC 1/SOC 2 compliance, supporting partner and M&A due diligence.
 
 Engineering Manager
 Etsy
-May 2016-July 2019
+January 2016 - July 2019
 
-- Transformed fragmented engineering teams into a cohesive unit while modernizing critical customer-facing infrastructure.
-- Assembled and guided diverse team of 20+ high-performing software engineers through significant organizational changes.
-- Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ customer interactions per hour.
-- Integrated 24/7 global customer support platform, enabling thousands of daily interactions, improving the experience for buyers, sellers and staff, while achieving significant cost savings.
+- Assembled and guided a diverse team of 20+ high-performing software engineers through significant organizational changes.
+- Directed migration of core marketing infrastructure while maintaining business continuity for a system serving 10M+ messages per hour.
+- Integrated 24/7 global customer support solution, enabling thousands of daily interactions while achieving significant cost savings.
 
 Engineering Manager
 Constant Contact
-Dec 2012-Dec 2015
+December 2012 - December 2015
 
-- Revitalized engineering culture and delivery capabilities while executing complex legacy system modernization.
-- Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months.
-- Recruited over twenty engineers, building out a diverse, full-stack team.
-- Created apprenticeship program to identify and grow high-potential candidates, often from less-traditional backgrounds in the tech industry.
-- Instituted quality improvement effort, eliminating a defect backlog of over 300 issues and cutting the rate of defect introduction in new software by 80%.
+- Oversaw development and release of main CRM application rewrite, migrating 650,000 customers over 6 months with controlled cutovers.
+- Recruited 20+ engineers, building out diverse, full-stack teams in Boston and New York City. Created apprenticeship program to grow high-potential candidates.
+- Instituted a quality focus that eliminated a 300+ issue backlog and cut new defect rates by 80%.
 
 Manager of Development
-America's Test Kitchen
-Nov 2010-Nov 2012
+America’s Test Kitchen
+November 2010 - November 2012
 
-- Led technical evolution from traditional media company to modern digital platform while unifying disparate systems.
-- Led creation of an online cooking school, achieving highest retention of any product in company history.
-- Managed migration of 2M+ users across multiple sites, featuring a unified database and single sign-on.
+- Led creation of the ATK Online Cooking School, achieving highest retention of any product in company history.
+- Managed migration of 2M+ users on multiple sites, featuring a unified database and single sign-on, improving cross-property access and reliability.
 
-Lieutenant, United States Coast Guard
+Lieutenant, United States Coast Guard, 1990 - 1994
 
-Bachelor of Arts, Language & Literature
-St Mary's College of Maryland
+Bachelor of Arts, Language & Literature, 1990
+St. Mary’s College of Maryland
