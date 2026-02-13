@@ -1,7 +1,8 @@
 BRIAN RUNK
 Annapolis, Maryland • brian@brianrunk.net • linkedin.com/in/brianrunk
 
-Senior technology leader with expertise in aligning engineering work to business goals, driving ~25% year-over-year operational efficiencies and revenue enablement at multi-million-user scale.
+Senior technology leader with expertise in aligning engineering work to business goals,
+driving ~25% year-over-year operational efficiencies and revenue enablement at multi-million-user scale.
 Transformed organizations through improved communication cadence and process implementation, enabling predictable releases and increased quality.
 Modernized and unified customer platforms impacting millions of customers and supporting 10M+ interactions per hour with uptime of 98%+.
 Built diverse, high-performing teams through deliberate talent development and mentoring, maintaining retention during periods of rapid growth and change.
