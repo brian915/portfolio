@@ -1,0 +1,64 @@
+**Podcast Title:** *The Skilled Operator: Engineering Leadership in the 2026 Economy*
+**Episode Focus:** A Deep Dive Case Study on Brian Runk
+**Hosts:** Alex (Host) and Sarah (Senior Tech Talent Analyst)
+
+**(Audio FX: Upbeat, modern synth intro music fades into a studio setting)**
+
+**Alex:** Welcome back to *The Skilled Operator*. Today we’re doing something a little different. We usually talk about abstract market trends, but today we’re doing a deep-dive case study on a specific profile. We are analyzing the career and current market positioning of Brian Runk, a senior engineering leader based out of the DC-Baltimore area.
+
+**Sarah:** Thanks, Alex. I love this case study because Brian is the perfect prototype for what we are calling the "2026 Great Flattening" survivor. We’re seeing a market right now where middle management is being decimated by AI and efficiency cuts—Amazon cutting 14,000 roles, for example. But Brian’s profile is exactly what survives: the "Skilled Operator."
+
+**Alex:** Let’s start with the "hard" assets. Looking at his resume and LinkedIn, what stands out immediately?
+
+**Sarah:** It’s the combination of "Scale" and "Rescue." If you look at his time at Etsy, he wasn’t just managing people; he owned the migration of a core marketing system serving **10 million messages per hour**,. That is massive volume. Then you look at Constant Contact—he led a migration for **650,000 customers** over six months with controlled cutovers.
+
+**Alex:** And migrations are the things that keep CTOs up at night, right?
+
+**Sarah:** Exactly. In our 2026 market analysis, we see that **71% of CIOs list application modernization as their number one priority**. Brian isn’t just a manager; he’s essentially an "insurance policy" for these high-risk projects. He’s done it at Etsy, Sparkfund, and America’s Test Kitchen, where he unified 2 million users. He has a repeatable playbook for taking messy, legacy tech and modernizing it without breaking the business.
+
+**Alex:** Speaking of modernizing, let's talk about his most recent role at FINRA. He was the Director of Technology for R&D there from 2023 to 2025. This feels like a pivot from his SaaS background.
+
+**Sarah:** It was a strategic masterstroke. He managed a **$3 million annual R&D program** focused on AI, Machine Learning, and Graph Data. But here is the differentiator: he didn’t just play in a sandbox. He increased the executive approval rate for these projects to **98%** by linking them to enterprise strategy.
+
+**Alex:** That’s crucial because the market report suggests that in 2026, companies are done with "AI for fun." They want ROI.
+
+**Sarah:** Precisely. He holds a certification in "AI Agents Fundamentals", but his Github shows he’s actually building with this stuff. He has a repo called `postagent` which is a human-in-the-loop LinkedIn automation agent using local AI. This proves he isn’t just talking about AI strategy; he’s hands-on with the tools. He’s bridging that gap between "Visionary" and "Builder."
+
+**Alex:** I want to touch on the "Human" side of his profile. We have a stack of recommendations here that are honestly glowing.
+
+**Sarah:** They are incredibly consistent. You have Sage Reynolds calling him "The best manager I've ever worked for, full stop". Alice M. mentions he has a "near-psychic ability to build a great team".
+
+**Alex:** "Near-psychic"—that’s a strong endorsement.
+
+**Sarah:** It is. And look at the retention data. At Etsy, during significant organizational changes, he maintained **100% team retention**. In the current market, where burnout is rampant, having a leader who—according to former direct report Margaret Berry—fosters a "culture of trust and respect" is a massive financial asset. Hiring is expensive; keeping good engineers is priceless.
+
+**Alex:** His LinkedIn banner has the slogan: "Ideas, Innovation, Individuals". It seems like he really leans into that "Individuals" part.
+
+**Sarah:** He does. Stephen Ray, a CTO who worked with him at FINRA, noted that Brian excelled at keeping R&D focused on value, but did it through strong communication and professional presentation. He balances the "hard" technical requirements of a place like FINRA—which is highly regulated—with the soft skills needed to keep a team happy.
+
+**Alex:** Let’s look at his job search strategy. He’s looking for Director or VP roles, potentially in Media or B2B SaaS,. How does he fit into the 2026 landscape?
+
+**Sarah:** Perfectly. He’s targeting the "Agentic Enterprise" shift in Media and Entertainment. Media companies are facing a "content discovery crisis" and need Graph Data and AI solutions—exactly what he was researching at FINRA. Plus, he’s based in the DC-Baltimore area.
+
+**Alex:** Is that a good spot to be in 2026?
+
+**Sarah:** It’s actually a "Premium Tech Center" now. Salaries there are tracking just 8-10% behind the Bay Area. He’s got companies like Capital One, alertus, and various AI startups in his backyard. But he’s also positioned for remote work, which for senior leadership is commanding salaries over $200k.
+
+**Alex:** He also seems to be using a very sophisticated "Scoring Rubric" for his job search.
+
+**Sarah:** Yes, he has a file called `co_prompt.txt` that he uses to score companies. He penalizes "consultancies" and prioritizes "Product-Led" companies. He’s using his own engineering mindset to engineer his job search. He’s filtering out the noise to focus on high-yield opportunities.
+
+**Alex:** So, final verdict, Sarah. If you’re a Series B or C startup in 2026, do you hire Brian Runk?
+
+**Sarah:** He is a "Strong Buy". Here is why:
+1.  **Risk Mitigation:** He has done the hard migrations at scale (Etsy/Constant Contact).
+2.  **AI Literacy:** He isn’t just guessing about AI; he ran a $3M program on it at FINRA.
+3.  **Culture:** He repairs and scales teams with 100% retention stats.
+
+**Alex:** He’s the "Skilled Operator" the market is begging for.
+
+**Sarah:** Exactly. He’s not a "clipboard manager." He’s a builder who leads.
+
+**Alex:** Thanks for the breakdown, Sarah. For our listeners, if you want to see what a "2026 Ready" resume looks like, Brian Runk is the case study to beat.
+
+**(Audio FX: Outro music swells and fades)**
