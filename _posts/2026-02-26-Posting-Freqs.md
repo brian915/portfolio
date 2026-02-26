@@ -1,0 +1,656 @@
+---
+layout: post
+title:  Posting Freqs
+published:  false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Posting Strategies</title>
+  <link rel="stylesheet" href="posting_freqs.css">  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .global-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .global-tab-btn {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--brand-blue);
+      background-color: transparent;
+      border: 2px solid var(--brand-blue);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .global-tab-btn.active {
+      background-color: var(--brand-blue);
+      color: #fff;
+    }
+    .global-tab-btn:hover:not(.active) {
+      background-color: #f0f4f8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="global-tabs">
+    <button class="global-tab-btn active" data-range="3mo">3-Month View</button>
+    <button class="global-tab-btn" data-range="14d">14-Day View</button>
+  </div>
+
+  <div class="widget-container" id="widget-1">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">How the Pros Post: Distinct Slots vs. Slide Bursts</h2>
+        <p class="widget-subtitle">Click on a strategy below to reveal the data insights.</p>
+      </div>
+    </div>
+    <table id="strategyTable">
+      <thead><tr><th>Strategy</th><th>Characteristics</th><th>Creators</th><th></th></tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <div class="widget-container" id="widget-1-5">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">The Format Multipliers</h2>
+        <p class="widget-subtitle">Maximum media items delivered in a single distinct post.</p>
+      </div>
+    </div>
+    <div id="multiplier-chart"></div>
+    <div class="insight-badge" style="margin-top: 1rem;">
+      <strong>Spotlight:</strong> These creators maintain standard weekly cadences but maximize feed real estate by packing up to 13 slides or newsletter items into a single drop.
+    </div>
+  </div>
+
+  <div class="widget-container" id="widget-2">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header" id="leaderboard-title">3-Month Volume Leaderboard</h2>
+        <p class="widget-subtitle" id="leaderboard-subtitle">Distinct posts (Nov 2025 – Feb 2026).</p>
+      </div>
+    </div>
+    <div id="chart"></div>
+  </div>
+
+  <div class="widget-container" id="widget-cadence">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">Weekly Posting Cadence Grid</h2>
+        <p class="widget-subtitle">An archetypal week mapping how frequently top creators post each day.</p>
+      </div>
+    </div>
+    <div id="cadence-chart"></div>
+  </div>
+
+  <div class="widget-container" id="widget-3">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">Behind the Scenes: The Daily Clockwork</h2>
+        <p class="widget-subtitle">Some creators routinely post at the exact same times, which may represent "morning" or "evening" depending upon their location.</p>
+      </div>
+      <div class="tz-controls">
+        <button class="tz-btn" data-tz="UTC">UTC</button>
+        <button class="tz-btn active-toggle" data-tz="ET">ET</button>
+        <button class="tz-btn" data-tz="PT">PT</button>
+      </div>
+    </div>
+    <div class="clock-wrapper">
+      <div id="clock-chart"></div>
+      <div class="center-info" id="centerInfo">
+        <div class="time-label" id="timeLabel">Hover</div>
+        <div class="zone-label" id="zoneLabel">Over a Zone</div>
+        <div class="creator-label" id="creatorLabel">to see posting schedules.</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const sharedStrategies = [
+      {
+        "strategy": "Spaced Schedulers",
+        "description": "Multiple distinct posts at spaced intervals",
+        "creators": "Creator F (The AM/PM Pacer), Creator C (The Evening Echo), Creator G (The Triple Hitter)",
+        "insight": "Creator G (The Triple Hitter) consistently hits distinct 03:00, 07:00, and 11:00 ET slots."
+      },
+      {
+        "strategy": "Metronomes",
+        "description": "Exactly 1 distinct post per day, down to the exact minute",
+        "creators": "Creator H (The 08:24 Automaton), Creator I (The Daily Tick)",
+        "insight": "Creator H (The 08:24 Automaton) posts at exactly 08:24–08:25 ET every single day with near-zero variance."
+      },
+      {
+        "strategy": "Organic Posters",
+        "description": "Manual posting at varied, unpredictable times",
+        "creators": "Creator J, Creator K, Creator L, Creator M, Creator O, Creator P",
+        "insight": "Creator J posts consistently but at erratic hours, suggesting genuine, on-the-fly inspiration."
+      }
+    ];
+
+    const sharedFormatMultipliers = [
+      { "name": "Creator E", "max_items": 13, "label": "13 items per post" },
+      { "name": "Creator B", "max_items": 10, "label": "10 items per post" }
+    ];
+
+      const sharedHotZones = [
+      { 
+        "time_utc": "08:00", 
+        "labels": { "UTC": "Morning Hit", "ET": "Middle of the Night", "PT": "Midnight Hit" }, 
+        "creators": "Creator F & Creator G" 
+      },
+      { 
+        "time_utc": "12:00", 
+        "labels": { "UTC": "Mid-day Hit", "ET": "Early Morning Hit", "PT": "Pre-Dawn Hit" }, 
+        "creators": "Creator F, Creator G, & Creator C" 
+      },
+      { 
+        "time_utc": "13:24", 
+        "labels": { "UTC": "The Metronome", "ET": "The Metronome", "PT": "The Metronome" }, 
+        "creators": "Creator H" 
+      },
+      { 
+        "time_utc": "16:00", 
+        "labels": { "UTC": "Afternoon Hit", "ET": "Late Morning Hit", "PT": "Morning Hit" }, 
+        "creators": "Creator G" 
+      },
+      { 
+        "time_utc": "19:00", 
+        "labels": { "UTC": "Evening Hit", "ET": "Afternoon Hit", "PT": "Late Morning Hit" }, 
+        "creators": "Creator C & Creator D" 
+      }
+    ];
+
+    const datasets = {
+      "3mo": {
+        strategies: sharedStrategies,
+        formatMultipliers: sharedFormatMultipliers,
+        hotZones: sharedHotZones,
+        leaderboard: [
+          { "name": "Creator A (The Volume Machine)", "posts": 180 },
+          { "name": "Creator C (The Evening Echo)", "posts": 60 },
+          { "name": "Creator D (The Night Owl)", "posts": 59 },
+          { "name": "Creator F (The AM/PM Pacer)", "posts": 55 },
+          { "name": "Creator J", "posts": 53 },
+          { "name": "Creator K", "posts": 45 },
+          { "name": "Creator L", "posts": 44 },
+          { "name": "Creator E (The Bulk Blaster)", "posts": 43 },
+          { "name": "Creator G (The Triple Hitter)", "posts": 41 },
+          { "name": "Creator M", "posts": 40 },
+          { "name": "Creator B (The Carousel Skipper)", "posts": 40 },
+          { "name": "Creator H (The 08:24 Automaton)", "posts": 39 },
+          { "name": "Creator N", "posts": 32 },
+          { "name": "Creator I (The Daily Tick)", "posts": 29 },
+          { "name": "Creator O", "posts": 17 },
+          { "name": "Creator P", "posts": 13 }
+        ],
+        cadence: [
+          { name: "Creator F (AM/PM Pacer)", days: [2, 2, 2, 2, 2, 1, 0] },
+          { name: "Creator G (Triple Hitter)", days: [3, 3, 3, 3, 3, 0, 0] },
+          { name: "Creator H (The Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
+          { name: "Creator A (Volume Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
+          { name: "Creator J (Organic)", days: [1, 2, 0, 1, 0, 1, 0] }
+        ]
+      },
+      "14d": {
+        strategies: sharedStrategies,
+        formatMultipliers: sharedFormatMultipliers,
+        hotZones: sharedHotZones,
+        leaderboard: [
+          { "name": "Creator A (The Volume Machine)", "posts": 28 },
+          { "name": "Creator C (The Evening Echo)", "posts": 10 },
+          { "name": "Creator D (The Night Owl)", "posts": 9 },
+          { "name": "Creator F (The AM/PM Pacer)", "posts": 8 },
+          { "name": "Creator J", "posts": 8 },
+          { "name": "Creator K", "posts": 7 },
+          { "name": "Creator L", "posts": 7 },
+          { "name": "Creator E (The Bulk Blaster)", "posts": 7 },
+          { "name": "Creator G (The Triple Hitter)", "posts": 6 },
+          { "name": "Creator M", "posts": 6 },
+          { "name": "Creator B (The Carousel Skipper)", "posts": 6 },
+          { "name": "Creator H (The 08:24 Automaton)", "posts": 6 },
+          { "name": "Creator N", "posts": 5 },
+          { "name": "Creator I (The Daily Tick)", "posts": 4 },
+          { "name": "Creator O", "posts": 3 },
+          { "name": "Creator P", "posts": 2 }
+        ],
+        cadence: [
+          { name: "Creator F (AM/PM Pacer)", days: [2, 2, 2, 2, 0, 0, 0] },
+          { name: "Creator G (Triple Hitter)", days: [3, 3, 3, 3, 0, 0, 0] },
+          { name: "Creator H (The Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
+          { name: "Creator A (Volume Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
+          { name: "Creator J (Organic)", days: [0, 1, 1, 0, 1, 0, 0] }
+        ]
+      }
+    };
+
+    function renderTable(data) {
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = ""; 
+
+      data.forEach((rowObj) => {
+        const mainRow = document.createElement('tr');
+        mainRow.className = 'main-row';
+        mainRow.innerHTML = `
+          <td class="strategy-name">${rowObj.strategy}</td>
+          <td>${rowObj.description}</td>
+          <td>${rowObj.creators}</td>
+          <td class="toggle-icon"></td>
+        `;
+
+        const detailRow = document.createElement('tr');
+        detailRow.className = 'detail-row';
+        detailRow.innerHTML = `
+          <td colspan="4">
+            <div class="detail-content">
+              <div class="insight-badge">
+                <strong>Spotlight:</strong> ${rowObj.insight}
+              </div>
+            </div>
+          </td>
+        `;
+
+        mainRow.addEventListener('click', () => {
+          const isOpen = mainRow.classList.contains('active');
+          document.querySelectorAll('.main-row').forEach(row => row.classList.remove('active'));
+          document.querySelectorAll('.detail-row').forEach(row => row.classList.remove('open'));
+          if (!isOpen) {
+            mainRow.classList.add('active');
+            detailRow.classList.add('open');
+          }
+        });
+
+        tbody.appendChild(mainRow);
+        tbody.appendChild(detailRow);
+      });
+    }
+
+    function renderMultipliers(data) {
+      d3.select("#multiplier-chart").selectAll("*").remove();
+
+      const margin = { top: 10, right: 50, bottom: 30, left: 100 };
+      const width = 750 - margin.left - margin.right;
+      const height = 150 - margin.top - margin.bottom;
+
+      const svg = d3.select("#multiplier-chart")
+        .append("svg")
+        .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      const x = d3.scaleLinear()
+        .domain([0, 15]) 
+        .range([0, width]);
+
+      const y = d3.scaleBand()
+        .range([0, height])
+        .domain(data.map(d => d.name))
+        .padding(0.4);
+
+      svg.append("g")
+        .attr("class", "axis axis-label")
+        .call(d3.axisLeft(y).tickSize(0))
+        .selectAll("text")
+        .attr("dx", "-10");
+
+      svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("y", d => y(d.name))
+        .attr("height", y.bandwidth())
+        .attr("x", 0)
+        .attr("fill", "var(--accent-gold)") 
+        .attr("width", 0)
+        .transition()
+        .duration(1000) 
+        .attr("width", d => x(d.max_items));
+
+      svg.selectAll(".bar-label")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class", "bar-label")
+        .attr("y", d => y(d.name) + y.bandwidth() / 2 + 4)
+        .attr("x", 0)
+        .transition()
+        .duration(1000)
+        .attr("x", d => x(d.max_items) + 8)
+        .text(d => d.label);
+    }
+
+    function renderLeaderboard(data, range) {
+      d3.select("#chart").selectAll("*").remove();
+
+      const titleEl = document.getElementById("leaderboard-title");
+      const subtitleEl = document.getElementById("leaderboard-subtitle");
+      
+      if (range === "3mo") {
+        titleEl.innerText = "3-Month Volume Leaderboard";
+        subtitleEl.innerText = "Distinct posts (Nov 2025 – Feb 2026).";
+      } else {
+        titleEl.innerText = "14-Day Volume Leaderboard";
+        subtitleEl.innerText = "Distinct posts (Recent 14 days).";
+      }
+
+      const margin = { top: 20, right: 50, bottom: 30, left: 220 };
+      const width = 750 - margin.left - margin.right;
+      const height = 350 - margin.top - margin.bottom;
+  
+      const svg = d3.select("#chart")
+        .append("svg")
+        .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+  
+      const x = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.posts)])
+        .range([0, width]);
+    
+      svg.append("g")
+        .attr("transform", `translate(0,${height})`)
+        .attr("class", "axis axis-label")
+        .call(d3.axisBottom(x).ticks(5));
+    
+      const y = d3.scaleBand()
+        .range([0, height])
+        .domain(data.map(d => d.name))
+        .padding(0.3);
+    
+      svg.append("g")
+        .attr("class", "axis axis-label")
+        .call(d3.axisLeft(y).tickSize(0))
+        .selectAll("text")
+        .attr("dx", "-10");
+
+      const bars = svg.selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("y", d => y(d.name))
+        .attr("height", y.bandwidth())
+        .attr("x", 0)
+        .attr("width", 0)
+        .style("fill", "#6BA5ED")
+        .on("mouseover", function(event, d) {
+          d3.select(this).style("fill", "var(--brand-blue)");
+          svg.selectAll(".bar-label")
+            .filter(labelData => labelData.name === d.name)
+            .style("fill", "var(--brand-blue)")
+            .style("font-weight", "bold");
+        })
+        .on("mouseout", function(event, d) {
+          d3.select(this).style("fill", "#6BA5ED");
+          svg.selectAll(".bar-label")
+            .filter(labelData => labelData.name === d.name)
+            .style("fill", "var(--text-secondary)")
+            .style("font-weight", "normal");
+        });
+
+      bars.transition()
+        .duration(1000)
+        .attr("width", d => x(d.posts));
+
+      const labels = svg.selectAll(".bar-label")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("class", "bar-label")
+        .attr("y", d => y(d.name) + y.bandwidth() / 2 + 4)
+        .attr("x", 0)
+        .style("fill", "var(--text-secondary)")
+        .style("font-weight", "normal")
+        .style("pointer-events", "none")
+        .text(d => d.posts);
+
+      labels.transition()
+        .duration(1000)
+        .attr("x", d => x(d.posts) + 8);
+    }
+
+    function renderCadenceGrid(data) {
+      d3.select("#cadence-chart").selectAll("*").remove();
+
+      const margin = { top: 40, right: 30, bottom: 80, left: 220 };
+      const width = 750 - margin.left - margin.right;
+      const height = 300 - margin.top - margin.bottom;
+
+      const svg = d3.select("#cadence-chart")
+        .append("svg")
+        .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+      const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+      const x = d3.scalePoint()
+        .domain(days)
+        .range([0, width])
+        .padding(0.5);
+
+      const y = d3.scalePoint()
+        .domain(data.map(d => d.name))
+        .range([0, height])
+        .padding(0.5);
+
+      svg.selectAll(".h-line")
+        .data(data.map(d => d.name))
+        .enter()
+        .append("line")
+        .attr("class", "h-line")
+        .attr("x1", 0)
+        .attr("x2", width)
+        .attr("y1", d => y(d))
+        .attr("y2", d => y(d))
+        .style("stroke", "#e2e8f0")
+        .style("stroke-width", 1);
+
+      svg.selectAll(".v-line")
+        .data(days)
+        .enter()
+        .append("line")
+        .attr("class", "v-line")
+        .attr("x1", d => x(d))
+        .attr("x2", d => x(d))
+        .attr("y1", 0)
+        .attr("y2", height)
+        .style("stroke", "#e2e8f0")
+        .style("stroke-width", 1);
+
+      svg.append("g")
+        .attr("class", "axis axis-label")
+        .call(d3.axisLeft(y).tickSize(0))
+        .selectAll("text")
+        .attr("dx", "-10");
+
+      svg.append("g")
+        .attr("class", "axis axis-label")
+        .attr("transform", "translate(0,-20)")
+        .call(d3.axisTop(x).tickSize(0))
+        .selectAll("text")
+        .style("font-size", "14px")
+        .style("font-weight", "bold")
+        .style("fill", "var(--brand-blue)");
+
+      svg.selectAll(".domain").remove();
+
+      const points = [];
+      data.forEach(row => {
+        row.days.forEach((val, i) => {
+          if (val > 0) {
+            points.push({
+              name: row.name,
+              day: days[i],
+              val: val
+            });
+          }
+        });
+      });
+
+      svg.selectAll(".dot")
+        .data(points)
+        .enter()
+        .append("circle")
+        .attr("class", "dot")
+        .attr("cx", d => x(d.day))
+        .attr("cy", d => y(d.name))
+        .attr("r", 0)
+        .style("fill", d => {
+          if (d.val === 1) return "#9BC9ED";
+          if (d.val === 2) return "var(--brand-blue)";
+          return "var(--accent-gold)";
+        })
+        .transition()
+        .duration(1000)
+        .attr("r", d => {
+          if (d.val === 1) return 6;
+          if (d.val === 2) return 10;
+          return 14;
+        });
+
+      const legend = svg.append("g")
+        .attr("transform", `translate(0, ${height + 40})`);
+
+      const legendData = [
+        { label: "1 Post / Day", val: 1, r: 6, color: "#9BC9ED" },
+        { label: "2 Posts / Day", val: 2, r: 10, color: "var(--brand-blue)" },
+        { label: "3+ Posts / Day", val: 3, r: 14, color: "var(--accent-gold)" }
+      ];
+
+      legendData.forEach((d, i) => {
+        const g = legend.append("g").attr("transform", `translate(${i * 150}, 0)`);
+        
+        g.append("circle")
+          .attr("cx", 0)
+          .attr("cy", -4)
+          .attr("r", d.r)
+          .style("fill", d.color);
+          
+        g.append("text")
+          .attr("x", 20)
+          .attr("y", 0)
+          .attr("alignment-baseline", "middle")
+          .style("font-size", "12px")
+          .style("fill", "var(--text-secondary)")
+          .text(d.label);
+      });
+    }
+
+    let clockTzOffsets = { "UTC": 0, "ET": -5, "PT": -8 };
+    let currentTz = "ET", currentOffset = -5;
+
+    function renderClock(data) {
+      d3.select("#clock-chart").selectAll("*").remove();
+
+      function timeToDecimal(timeStr) {
+        const parts = timeStr.split(':');
+        return parseInt(parts[0], 10) + (parseInt(parts[1], 10) / 60);
+      }
+    
+      function formatLocalTime(utcTimeStr, offset, tz) {
+        const decimal = (timeToDecimal(utcTimeStr) + offset + 24) % 24;
+        const hrs = Math.floor(decimal);
+        const mins = Math.round((decimal - hrs) * 60);
+        return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')} ${tz}`;
+      }
+    
+      const width = 400, height = 400;
+      const radius = Math.min(width, height) / 2;
+    
+      const svg = d3.select("#clock-chart")
+        .style("width", "100%")
+        .style("height", "100%")
+        .append("svg")
+        .attr("width", "100%")
+        .attr("height", "100%")
+        .attr("viewBox", `0 0 ${width} ${height}`)
+        .append("g")
+        .attr("transform", `translate(${width / 2},${height / 2})`);
+    
+      svg.append("circle").attr("class", "clock-bg").attr("r", radius - 20);
+    
+      const scale = d3.scaleLinear().range([0, 2 * Math.PI]).domain([0, 24]);
+      const tickRadius = radius - 20, labelRadius = radius - 5;
+    
+      for (let i = 0; i < 24; i++) {
+        const angle = scale(i) - (Math.PI / 2);
+        const isMajor = i % 6 === 0;
+        const innerRadius = isMajor ? tickRadius - 15 : tickRadius - 8;
+        svg.append("line").attr("class", isMajor ? "clock-tick-major" : "clock-tick").attr("x1", Math.cos(angle) * innerRadius).attr("y1", Math.sin(angle) * innerRadius).attr("x2", Math.cos(angle) * tickRadius).attr("y2", Math.sin(angle) * tickRadius);
+        if (isMajor) {
+          svg.append("text").attr("class", "clock-text").attr("x", Math.cos(angle) * labelRadius).attr("y", Math.sin(angle) * labelRadius).text(i === 0 ? "0 / 24" : i);
+        }
+      }
+            
+      const arcsGroup = svg.append("g").attr("id", "arcs-group");
+      const arcWidthHours = 0.75; 
+            
+      const arc = d3.arc().innerRadius(radius - 60).outerRadius(radius - 20).startAngle(d => scale(timeToDecimal(d.time_utc) - (arcWidthHours / 2))).endAngle(d => scale(timeToDecimal(d.time_utc) + (arcWidthHours / 2))).cornerRadius(4);
+      const arcHover = d3.arc().innerRadius(radius - 65).outerRadius(radius - 15).startAngle(d => scale(timeToDecimal(d.time_utc) - (arcWidthHours / 2))).endAngle(d => scale(timeToDecimal(d.time_utc) + (arcWidthHours / 2))).cornerRadius(4);
+      
+      const timeLabel = document.getElementById("timeLabel"), zoneLabel = document.getElementById("zoneLabel"), creatorLabel = document.getElementById("creatorLabel");
+
+    arcsGroup.selectAll(".hot-zone").data(data).enter().append("path").attr("class", "hot-zone").attr("d", arc)
+        .on("mouseover", function(event, d) {
+          d3.select(this).transition().duration(200).attr("d", arcHover);
+          timeLabel.innerText = formatLocalTime(d.time_utc, currentOffset, currentTz);
+          zoneLabel.innerText = d.labels[currentTz]; 
+          creatorLabel.innerText = d.creators;
+        })
+        .on("mouseout", function(event, d) {
+          d3.select(this).transition().duration(200).attr("d", arc);
+        });
+      arcsGroup.attr("transform", `rotate(${currentOffset * 15})`);
+    }
+    
+    function setTimezone(tz) {
+      currentTz = tz;
+      currentOffset = clockTzOffsets[tz];
+      document.querySelectorAll('.tz-btn').forEach(b => b.classList.remove('active-toggle'));
+      document.querySelector(`.tz-btn[data-tz="${tz}"]`).classList.add('active-toggle');
+      
+      const timeLabel = document.getElementById("timeLabel"), zoneLabel = document.getElementById("zoneLabel"), creatorLabel = document.getElementById("creatorLabel");
+      timeLabel.innerText = "Hover";
+      zoneLabel.innerText = "Over a Zone";
+      creatorLabel.innerText = "to see posting schedules.";
+      
+      d3.select("#arcs-group").transition().duration(750).attr("transform", `rotate(${currentOffset * 15})`);
+    }
+
+    document.querySelectorAll('.tz-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => setTimezone(e.target.dataset.tz));
+    });
+
+    function renderDashboard(range) {
+      const data = datasets[range];
+      renderTable(data.strategies);
+      renderMultipliers(data.formatMultipliers);
+      renderLeaderboard(data.leaderboard, range);
+      renderCadenceGrid(data.cadence);
+      renderClock(data.hotZones);
+    }
+
+    document.querySelectorAll('.global-tab-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.global-tab-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        renderDashboard(e.target.dataset.range);
+      });
+    });
+
+    renderDashboard('3mo');
+  });
+</script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 page_links:
   - title: WHO
-    url: /who.html
-  - title: WHAT
-    url: /what.html
+    url: /about.html
+  - title: Resume
+    url: /resume.html
   - title: WHERE
-    url: /where.html
+    url: /saas_eng_leader.html
     
 resume_links:
   - title: DOC
@@ -25,20 +25,20 @@ resume_links:
 page_entries:
   - title: Who is Brian?
     id: who
-    url: who
+    url: about
     desc: I lead engineering organizations that deliver high-performance software applications.
     img: lightning.png
     action: resume 
   - title: What I’ve done
     id: what
-    url: what
-    desc: 30+ years of digital leadership, building applications, teams and cultures.
+    url: resume
+    desc: 30+ years of digital leadership, building products, teams and cultures.
     img: whirlwind.png          
     action: about
   - title: Where I'm headed ...
     id: where
-    url: where
-    desc: Considering VP/CTO roles with strong product focus at companies ready to scale.
+    url: saas_eng_leader
+    desc: Engineering leadership roles with strong product focus at companies ready to scale.
     img: rising_sun.png
     action: contact
     
