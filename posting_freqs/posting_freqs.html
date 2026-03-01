@@ -6,74 +6,22 @@
   <title>LinkedIn Posting Strategies</title>
   <link rel="stylesheet" href="posting_freqs.css">  
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <style>
-    .global-tabs {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    .global-tab-btn {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-      font-weight: bold;
-      color: var(--brand-blue);
-      background-color: transparent;
-      border: 2px solid var(--brand-blue);
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .global-tab-btn.active {
-      background-color: var(--brand-blue);
-      color: #fff;
-    }
-    .global-tab-btn:hover:not(.active) {
-      background-color: #f0f4f8;
-    }
-  </style>
+Poster -> Poster
+Poster A (The Machine) The Volume Machine
+Poster B (Carousel Connoisseur) The Carousel Skipper
+Poster C (Evening Echo) The
+Poster D (Night Owl) The
+Poster E (Bulk Blaster) The
+Poster F (AM/PM) The AM/PM Pacer
+Poster G (Triple Dipper) The Triple Hitter
+Poster H (Automaton) The 13:24 Automaton
+Poster I (The Scheduler) The Daily Tick
 </head>
 <body>
 
   <div class="global-tabs">
     <button class="global-tab-btn active" data-range="3mo">3-Month View</button>
     <button class="global-tab-btn" data-range="14d">14-Day View</button>
-  </div>
-
-  <div class="widget-container" id="widget-1">
-    <div class="header-row">
-      <div class="header-text">
-        <h2 class="widget-header">How the Pros Post: Distinct Slots vs. Slide Bursts</h2>
-        <p class="widget-subtitle">Click on a strategy below to reveal the data insights.</p>
-      </div>
-    </div>
-    <table id="strategyTable">
-      <thead><tr><th>Strategy</th><th>Characteristics</th><th>Creators</th><th></th></tr></thead>
-      <tbody id="tableBody"></tbody>
-    </table>
-  </div>
-
-  <div class="widget-container" id="widget-1-5">
-    <div class="header-row">
-      <div class="header-text">
-        <h2 class="widget-header">The Format Multipliers</h2>
-        <p class="widget-subtitle">Maximum media items delivered in a single distinct post.</p>
-      </div>
-    </div>
-    <div id="multiplier-chart"></div>
-    <div class="insight-badge" style="margin-top: 1rem;">
-      <strong>Spotlight:</strong> These creators maintain standard weekly cadences but maximize feed real estate by packing up to 13 slides or newsletter items into a single drop.
-    </div>
-  </div>
-
-  <div class="widget-container" id="widget-2">
-    <div class="header-row">
-      <div class="header-text">
-        <h2 class="widget-header" id="leaderboard-title">3-Month Volume Leaderboard</h2>
-        <p class="widget-subtitle" id="leaderboard-subtitle">Distinct posts (Nov 2025 – Feb 2026).</p>
-      </div>
-    </div>
-    <div id="chart"></div>
   </div>
 
   <div class="widget-container" id="widget-cadence">
@@ -108,6 +56,43 @@
     </div>
   </div>
 
+
+  <div class="widget-container" id="widget-1">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">Distinct Slots vs. Slide Bursts</h2>
+        <p class="widget-subtitle">Click on a strategy below to reveal the data insights.</p>
+      </div>
+    </div>
+    <table id="strategyTable">
+      <thead><tr><th>Strategy</th><th>Characteristics</th><th>Posters</th><th></th></tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <div class="widget-container" id="widget-1.5">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header">The Format Multipliers</h2>
+        <p class="widget-subtitle">Maximum media items delivered in a single distinct post.</p>
+      </div>
+    </div>
+    <div id="multiplier-chart"></div>
+    <div class="insight-badge" style="margin-top: 1rem;">
+      <strong>Spotlight:</strong> These creators maintain standard weekly cadences but maximize feed real estate by packing up to 13 slides or newsletter items into a single drop.
+    </div>
+  </div>
+
+  <div class="widget-container" id="widget-2">
+    <div class="header-row">
+      <div class="header-text">
+        <h2 class="widget-header" id="leaderboard-title">3-Month Volume Leaderboard</h2>
+        <p class="widget-subtitle" id="leaderboard-subtitle">Distinct posts (Nov 2025 – Feb 2026).</p>
+      </div>
+    </div>
+    <div id="chart"></div>
+  </div>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
 
@@ -115,53 +100,53 @@
       {
         "strategy": "Spaced Schedulers",
         "description": "Multiple distinct posts at spaced intervals",
-        "creators": "Creator F (The AM/PM Pacer), Creator C (The Evening Echo), Creator G (The Triple Hitter)",
-        "insight": "Creator G (The Triple Hitter) consistently hits distinct 03:00, 07:00, and 11:00 ET slots."
+        "creators": "Poster F (The AM/PM), Poster C (The Evening Echo), Poster G (The Triple Dipper)",
+        "insight": "Poster G (The Triple Dipper) consistently posts at distinct 03:00, 07:00, and 11:00 ET slots."
       },
       {
         "strategy": "Metronomes",
         "description": "Exactly 1 distinct post per day, down to the exact minute",
-        "creators": "Creator H (The 08:24 Automaton), Creator I (The Daily Tick)",
-        "insight": "Creator H (The 08:24 Automaton) posts at exactly 08:24–08:25 ET every single day with near-zero variance."
+        "creators": "Poster H (The 08:24 Automaton), Poster I (The Daily Tick)",
+        "insight": "Poster H (The 08:24 Automaton) posts at exactly 08:24–08:25 ET every single day with near-zero variance."
       },
       {
         "strategy": "Organic Posters",
         "description": "Manual posting at varied, unpredictable times",
-        "creators": "Creator J, Creator K, Creator L, Creator M, Creator O, Creator P",
-        "insight": "Creator J posts consistently but at erratic hours, suggesting genuine, on-the-fly inspiration."
+        "creators": "Poster J, Poster K, Poster L, Poster M, Poster O, Poster P",
+        "insight": "Poster J posts consistently but at erratic hours, suggesting genuine, on-the-fly inspiration."
       }
     ];
 
     const sharedFormatMultipliers = [
-      { "name": "Creator E", "max_items": 13, "label": "13 items per post" },
-      { "name": "Creator B", "max_items": 10, "label": "10 items per post" }
+      { "name": "Poster E", "max_items": 13, "label": "13 items per post" },
+      { "name": "Poster B", "max_items": 10, "label": "10 items per post" }
     ];
 
       const sharedHotZones = [
       { 
         "time_utc": "08:00", 
-        "labels": { "UTC": "Morning Hit", "ET": "Middle of the Night", "PT": "Midnight Hit" }, 
-        "creators": "Creator F & Creator G" 
+        "labels": { "UTC": "Morning Drop", "ET": "Middle of the Night", "PT": "Midnight Drop" }, 
+        "creators": "Poster F & Poster G" 
       },
       { 
         "time_utc": "12:00", 
-        "labels": { "UTC": "Mid-day Hit", "ET": "Early Morning Hit", "PT": "Pre-Dawn Hit" }, 
-        "creators": "Creator F, Creator G, & Creator C" 
+        "labels": { "UTC": "Mid-day Drop", "ET": "Early Morning Drop", "PT": "Pre-Dawn Drop" }, 
+        "creators": "Poster F, Poster G, & Poster C" 
       },
       { 
         "time_utc": "13:24", 
         "labels": { "UTC": "The Metronome", "ET": "The Metronome", "PT": "The Metronome" }, 
-        "creators": "Creator H" 
+        "creators": "Poster H" 
       },
       { 
         "time_utc": "16:00", 
-        "labels": { "UTC": "Afternoon Hit", "ET": "Late Morning Hit", "PT": "Morning Hit" }, 
-        "creators": "Creator G" 
+        "labels": { "UTC": "Afternoon Drop", "ET": "Late Morning Drop", "PT": "Morning Drop" }, 
+        "creators": "Poster G" 
       },
       { 
         "time_utc": "19:00", 
-        "labels": { "UTC": "Evening Hit", "ET": "Afternoon Hit", "PT": "Late Morning Hit" }, 
-        "creators": "Creator C & Creator D" 
+        "labels": { "UTC": "Evening Drop", "ET": "Afternoon Drop", "PT": "Late Morning Drop" }, 
+        "creators": "Poster C & Poster D" 
       }
     ];
 
@@ -171,29 +156,29 @@
         formatMultipliers: sharedFormatMultipliers,
         hotZones: sharedHotZones,
         leaderboard: [
-          { "name": "Creator A (The Volume Machine)", "posts": 180 },
-          { "name": "Creator C (The Evening Echo)", "posts": 60 },
-          { "name": "Creator D (The Night Owl)", "posts": 59 },
-          { "name": "Creator F (The AM/PM Pacer)", "posts": 55 },
-          { "name": "Creator J", "posts": 53 },
-          { "name": "Creator K", "posts": 45 },
-          { "name": "Creator L", "posts": 44 },
-          { "name": "Creator E (The Bulk Blaster)", "posts": 43 },
-          { "name": "Creator G (The Triple Hitter)", "posts": 41 },
-          { "name": "Creator M", "posts": 40 },
-          { "name": "Creator B (The Carousel Skipper)", "posts": 40 },
-          { "name": "Creator H (The 08:24 Automaton)", "posts": 39 },
-          { "name": "Creator N", "posts": 32 },
-          { "name": "Creator I (The Daily Tick)", "posts": 29 },
-          { "name": "Creator O", "posts": 17 },
-          { "name": "Creator P", "posts": 13 }
+          { "name": "Poster A (The Volume Machine)", "posts": 180 },
+          { "name": "Poster C (The Evening Echo)", "posts": 60 },
+          { "name": "Poster D (The Night Owl)", "posts": 59 },
+          { "name": "Poster F (The AM/PM Pacer)", "posts": 55 },
+          { "name": "Poster J", "posts": 53 },
+          { "name": "Poster K", "posts": 45 },
+          { "name": "Poster L", "posts": 44 },
+          { "name": "Poster E (The Bulk Blaster)", "posts": 43 },
+          { "name": "Poster G (The Triple Dipper)", "posts": 41 },
+          { "name": "Poster M", "posts": 40 },
+          { "name": "Poster B (The Carousel Skipper)", "posts": 40 },
+          { "name": "Poster H (The 08:24 Automaton)", "posts": 39 },
+          { "name": "Poster N", "posts": 32 },
+          { "name": "Poster I (The Daily Tick)", "posts": 29 },
+          { "name": "Poster O", "posts": 17 },
+          { "name": "Poster P", "posts": 13 }
         ],
         cadence: [
-          { name: "Creator F (AM/PM Pacer)", days: [2, 2, 2, 2, 2, 1, 0] },
-          { name: "Creator G (Triple Hitter)", days: [3, 3, 3, 3, 3, 0, 0] },
-          { name: "Creator H (The Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
-          { name: "Creator A (Volume Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
-          { name: "Creator J (Organic)", days: [1, 2, 0, 1, 0, 1, 0] }
+          { name: "Poster F (AM/PM Pacer)", days: [2, 2, 2, 2, 2, 1, 0] },
+          { name: "Poster G (Triple Dipper)", days: [3, 3, 3, 3, 3, 0, 0] },
+          { name: "Poster H (The Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
+          { name: "Poster A (Volume Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
+          { name: "Poster J (Organic)", days: [1, 2, 0, 1, 0, 1, 0] }
         ]
       },
       "14d": {
@@ -201,29 +186,29 @@
         formatMultipliers: sharedFormatMultipliers,
         hotZones: sharedHotZones,
         leaderboard: [
-          { "name": "Creator A (The Volume Machine)", "posts": 28 },
-          { "name": "Creator C (The Evening Echo)", "posts": 10 },
-          { "name": "Creator D (The Night Owl)", "posts": 9 },
-          { "name": "Creator F (The AM/PM Pacer)", "posts": 8 },
-          { "name": "Creator J", "posts": 8 },
-          { "name": "Creator K", "posts": 7 },
-          { "name": "Creator L", "posts": 7 },
-          { "name": "Creator E (The Bulk Blaster)", "posts": 7 },
-          { "name": "Creator G (The Triple Hitter)", "posts": 6 },
-          { "name": "Creator M", "posts": 6 },
-          { "name": "Creator B (The Carousel Skipper)", "posts": 6 },
-          { "name": "Creator H (The 08:24 Automaton)", "posts": 6 },
-          { "name": "Creator N", "posts": 5 },
-          { "name": "Creator I (The Daily Tick)", "posts": 4 },
-          { "name": "Creator O", "posts": 3 },
-          { "name": "Creator P", "posts": 2 }
+          { "name": "Poster A (The Machine)", "posts": 28 },
+          { "name": "Poster C (The Evening Echo)", "posts": 10 },
+          { "name": "Poster D (The Night Owl)", "posts": 9 },
+          { "name": "Poster F (The AM/PM Pacer)", "posts": 8 },
+          { "name": "Poster J", "posts": 8 },
+          { "name": "Poster K", "posts": 7 },
+          { "name": "Poster L", "posts": 7 },
+          { "name": "Poster E (Bulk Blaster)", "posts": 7 },
+          { "name": "Poster G (The Triple Dipper)", "posts": 6 },
+          { "name": "Poster M", "posts": 6 },
+          { "name": "Poster B (Carousel Connisseur)", "posts": 6 },
+          { "name": "Poster H (Automaton)", "posts": 6 },
+          { "name": "Poster N", "posts": 5 },
+          { "name": "Poster I (Third Day Scheduler)", "posts": 4 },
+          { "name": "Poster O", "posts": 3 },
+          { "name": "Poster P", "posts": 2 }
         ],
         cadence: [
-          { name: "Creator F (AM/PM Pacer)", days: [2, 2, 2, 2, 0, 0, 0] },
-          { name: "Creator G (Triple Hitter)", days: [3, 3, 3, 3, 0, 0, 0] },
-          { name: "Creator H (The Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
-          { name: "Creator A (Volume Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
-          { name: "Creator J (Organic)", days: [0, 1, 1, 0, 1, 0, 0] }
+          { name: "Poster F (AM/PM)", days: [2, 2, 2, 2, 0, 0, 0] },
+          { name: "Poster G (Triple Dipper)", days: [3, 3, 3, 3, 0, 0, 0] },
+          { name: "Poster H (Automaton)", days: [1, 1, 1, 1, 1, 1, 1] },
+          { name: "Poster A (The Machine)", days: [3, 3, 3, 3, 3, 3, 3] },
+          { name: "Poster J (Organic)", days: [0, 1, 1, 0, 1, 0, 0] }
         ]
       }
     };
