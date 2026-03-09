@@ -37,9 +37,16 @@ layout: default
     {{ content }}
   </div>
 
+  {% if site.theme_config.show_quotes == true %}
+  <div class="home-card-band">
+    {% include quote_block.html collection=site.data.home.quote_entries %}
+  </div>
+  {% endif %}
+
+
   {% if site.theme_config.show_pages == true %}
   <div class="home-card-band">
-    {% include section_block.html collection=site.data.home.page_entries %}
+    {% include page_block.html collection=site.data.home.page_entries %}
   </div>
   {% endif %}
 

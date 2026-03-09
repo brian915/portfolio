@@ -24,25 +24,40 @@ resume_links:
 
 hero:
   title: Hi, I'm Brian<br>I lead engineering teams.
-  subtext: Scaling Orgs · Platform Migrations · AI Implementation
+  subtext: Org Scaling · Platform Migrations · AI Implementation
   image: hero-placeholder-rotated.png
   image_alt: Placeholder portrait photo
+
+quote_entries:
+  - title:
+    id: block-quote1
+    quote:  Brian has a near-psychic ability to build a great team.
+    author: Alice M.
+  - title:
+    id: block-quote2
+    quote: Brian is the best manager I've ever worked for, full stop.
+    author: Sage Reynolds
+  - title:
+    id: block-quote3
+    quote: Without Brian joining our team when he did, we NEVER would have launched.
+    author: John Brosnan
+
 
 page_entries:
   - title: Management
     id: block-about
     url: /about
-    desc: Built teams to 20+ engineers with 100% retention during high-change periods.
+    desc:  
     action: About
   - title: Delivery
     id: block-resume
     url: /resume
-    desc: Reduced defect rates and technical debt by  80% and introduced delivery practices that improved predictability.
+    desc: 
     action: Resume
   - title: Scaling
     id: block-contact
-    url: /contact
-    desc: Led migrations at Etsy (10M+ msgs/hr), Constant Contact (650k customers), and ATK (2M+ users).
+    url:/contact
+    desc: 
     action: Contact
 
 social_entries:
