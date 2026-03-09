@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /validation/
+Sitemap: https://brianrunk.net/sitemap.xml

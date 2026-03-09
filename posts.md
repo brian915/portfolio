@@ -2,6 +2,7 @@
 permalink: /posts.html
 layout: page
 title: Posts
+surface_theme: light
 ---
 
 <h2 class="content-title">Posts</h2>
