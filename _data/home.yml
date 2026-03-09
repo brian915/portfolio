@@ -29,15 +29,15 @@ hero:
   image_alt: Big Duck Energy
 
 quote_entries:
-  - title:
+  - title: Ruby Developer
     id: block-quote1
     quote:  Brian has a near-psychic ability to build a great team.
     author: Alice M.
-  - title:
+  - title: Senior Software Engineer
     id: block-quote2
     quote: Brian is the best manager I've ever worked for, full stop.
     author: Sage Reynolds
-  - title:
+  - title: Sr. Computer Scientist
     id: block-quote3
     quote: Without Brian joining when he did, we NEVER would have launched.
     author: John Brosnan

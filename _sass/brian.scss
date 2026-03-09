@@ -839,7 +839,8 @@ h6 {
 }
 
 .summary li{
-   list-style-type:'§';
+    //   list-style-type:'§';
+       list-style-type:disc;
 }
 
 .pos a,
@@ -1293,10 +1294,13 @@ hr:after {
 }
 
 .home-hero-photo {
-    width: 243px;
-    max-width: 65vw;
+    width: min(100%, 360px);
+    max-width: 100%;
+    height: auto;
     border-radius: 12px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+    -webkit-mask-image: radial-gradient(circle at center, #000 78%, transparent 100%);
+    mask-image: radial-gradient(circle at center, #000 78%, transparent 100%);
     object-fit: cover;
     object-position: center;
 }
@@ -1331,7 +1335,7 @@ hr:after {
 
 .site-main-home {
     padding-top: 0;
-    padding-bottom: 2.8vw;
+    padding-bottom: 1.8vw;
 }
 
 .home-quote-band .home-quote-card {
@@ -1400,7 +1404,7 @@ hr:after {
 }
 
 .home-card-band.home-quote-band {
-    padding-bottom: 2.8vw;
+    padding-bottom: 1.8vw;
 }
 
 .home-card-band .post-feed {
@@ -1594,8 +1598,7 @@ a.post-card:hover {
     }
 
     .home-hero-photo {
-        width: 180px;
-        max-width: 65vw;
+        width: min(100%, 260px);
     }
 
     .home-hero-title {

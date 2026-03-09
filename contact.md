@@ -14,9 +14,9 @@ description: "Contact Brian Runk regarding Director or VP of Engineering opportu
     <h6 id="lets-discuss">Let's discuss:</h6>
     <p><a href="mailto:">brian@brianrunk.net</a></p>
 
-    <h6 id="calendly">Calendly Link:</h6>
+    <!-- h6 id="calendly">Calendly Link:</h6 -->
 
-    <!-- Calendly inline widget begin -->
+    <!-- Calendly inline widget begin 
     <div class="calendly-inline-widget" data-url="https://calendly.com/brian-915?hide_gdpr_banner=1" style="position: relative;min-width:320px;height:320px;" data-processed="true">
       <div class="calendly-spinner">
         <div class="calendly-bounce1"></div>
@@ -26,7 +26,7 @@ description: "Contact Brian Runk regarding Director or VP of Engineering opportu
       <iframe src="https://calendly.com/brian-915?embed_domain=brianrunk.net&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="640px" height="320px" frameborder="1"></iframe>
     </div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
-    <!-- Calendly inline widget end -->
+    Calendly inline widget end -->
 
     <hr />
     <h6 id="contact">Contact Form:</h6>
@@ -72,6 +72,26 @@ description: "Contact Brian Runk regarding Director or VP of Engineering opportu
         padding: .75em 1rem;
         margin-bottom: 1.5rem;
       }
+
+/* Make typed text and placeholders readable */
+#fs-frm input,
+#fs-frm textarea,
+#fs-frm select {
+  color: #363a4f;
+}
+
+#fs-frm ::placeholder {
+  color: #7c84a6;
+  opacity: 1;
+}
+
+/* Make submit button readable */
+#fs-frm [type="submit"] {
+  background-color: #b4befe;
+  color: #1e1e2e;
+  border: 1px solid #b4befe;
+}
+
 
       #fs-frm input:focus,
       #fs-frm select:focus,
