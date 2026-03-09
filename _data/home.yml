@@ -24,7 +24,7 @@ resume_links:
 
 hero:
   title: Hi, I'm Brian<br>I lead engineering teams.
-  subtext: Team Scaling · Platform Migrations · AI Implementation
+  subtext: Scaling Orgs · Platform Migrations · AI Implementation
   image: hero-placeholder-rotated.png
   image_alt: Placeholder portrait photo
 
@@ -37,7 +37,7 @@ page_entries:
   - title: Delivery
     id: block-resume
     url: /resume
-    desc: Reduced defect rates by 80% and introduced delivery practices that improved predictability.
+    desc: Reduced defect rates and technical debt by  80% and introduced delivery practices that improved predictability.
     action: Resume
   - title: Scaling
     id: block-contact
