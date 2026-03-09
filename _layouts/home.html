@@ -33,18 +33,6 @@ layout: default
 </header>
 
 <main class="site-main site-main-home">
-  {% if site.data.home.scan_stats %}
-  <section class="home-stats-strip" aria-label="Career metrics">
-    <div class="container">
-      <div class="home-stats-grid">
-        {% for stat in site.data.home.scan_stats %}
-        <p class="home-stat-item">{{ stat.value }}</p>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% endif %}
-
   <div class="container">
     {{ content }}
   </div>

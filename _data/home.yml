@@ -28,11 +28,6 @@ hero:
   image: hero-placeholder-rotated.png
   image_alt: Placeholder portrait photo
 
-scan_stats:
-  - value: 100% retention
-  - value: 3 large-scale migrations
-  - value: 10M+ msgs/hr throughput
-
 page_entries:
   - title: Management
     id: block-about
