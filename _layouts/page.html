@@ -1,0 +1,40 @@
+---
+layout: default
+---
+  <header class="site-head">
+    <div class="container">
+
+      <div class="site-mast">
+        <div class="site-mast-left">
+
+	</div>
+        <div class="site-mast-right">  
+	  {% if site.theme_config.show_navbar == true %}
+            {% include resume_links_list.html collection=site.data.home.resume_links %}
+	  {% endif %}
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <div class="site-nav-left">
+         <div id="page-link" class="page-link">
+	   <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+	 </div>
+	 {% if site.theme_config.show_navbar == true %}
+	    {% include page_links_list.html collection=site.data.home.page_links %}
+	  {% endif %}
+	</div>
+        <div class="site-nav-right"><a href="mailto:brian@brianrunk.net">brian@brianrunk.net</a></div></div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="site-main {% if page.surface_theme %}surface-{{ page.surface_theme }}{% endif %}"{% if page.surface_background_image %} style="--surface-background-image: url('{{ page.surface_background_image | relative_url }}');"{% endif %}>
+    <div class="container">
+    
+      {{ content }}
+    
+    </div>
+  </main>
+

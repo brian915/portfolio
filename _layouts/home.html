@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<header class="site-head site-head-home">
+  <div class="container home-header-container">
+    <div class="site-mast home-mast">
+      <div class="site-mast-left home-text-links">
+        {% if site.theme_config.show_navbar == true %}
+          {% for page_item in site.data.home.page_links %}
+          <a class="home-text-link" href="{{ page_item.url | relative_url }}">{{ page_item.title }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div class="site-mast-right">
+        {% if site.theme_config.show_navbar == true %}
+          {% include resume_links_list.html collection=site.data.home.resume_links %}
+        {% endif %}
+      </div>
+    </div>
+
+    <section class="home-hero">
+      <div class="home-hero-photo-column">
+        <img class="home-hero-photo" src="/assets/images/{{ site.data.home.hero.image }}" alt="{{ site.data.home.hero.image_alt }}">
+      </div>
+      <div class="home-hero-copy">
+        <h1 class="home-hero-title">{{ site.data.home.hero.title }}</h1>
+        <div class="home-hero-accent"></div>
+        <p class="home-hero-subtext">{{ site.data.home.hero.subtext }}</p>
+      </div>
+    </section>
+  </div>
+</header>
+
+<main class="site-main site-main-home">
+  {% if site.data.home.scan_stats %}
+  <section class="home-stats-strip" aria-label="Career metrics">
+    <div class="container">
+      <div class="home-stats-grid">
+        {% for stat in site.data.home.scan_stats %}
+        <p class="home-stat-item">{{ stat.value }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  {% if site.theme_config.show_pages == true %}
+  <div class="home-card-band">
+    {% include section_block.html collection=site.data.home.page_entries %}
+  </div>
+  {% endif %}
+
+  {% if site.theme_config.show_blog == true %}
+  <div class="container">
+    <h2>{{ site.theme_config.home.title_blog }}</h2>
+    {% include post_list.html %}
+  </div>
+  {% endif %}
+
+  {% if site.theme_config.show_old_projects == true %}
+  <div class="container">
+    <h2>{{ site.theme_config.home.title_old_projects }}</h2>
+    {% include card_list.html collection=site.data.home.old_project_entries %}
+  </div>
+  {% endif %}
+</main>

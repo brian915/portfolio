@@ -1,0 +1,72 @@
+BRIAN RUNK
+Annapolis, Maryland • brian@brianrunk.net • linkedin.com/in/brianrunk
+
+Senior technology leader with expertise in aligning engineering work to business goals,
+driving ~25% year-over-year operational efficiencies and revenue enablement at multi-million-user scale.
+Transformed organizations through improved communication cadence and process implementation, enabling predictable releases and increased quality.
+Modernized and unified customer platforms impacting millions of customers and supporting 10M+ interactions per hour with uptime of 98%+.
+Built diverse, high-performing teams through deliberate talent development and mentoring, maintaining retention during periods of rapid growth and change.
+
+Core Competencies
+Technology Strategy & Planning
+Product Roadmapping & Delivery
+Scaling Engineering Organizations
+Migrations & Modernizations
+Agile & SDLC Transformation
+Engineering Governance
+Cross-functional Leadership
+Talent Development & Mentoring
+
+Director of Technology, Research & Development — FINRA
+November 2023 - July 2025
+
+Streamlined $3M annual R&D program.
+Increased both number of research projects and participation by 25%.
+Standardized and streamlined R&D proposal pipeline.
+Reduced time from submission to kickoff to weeks versus months.
+Doubled executive review cadence.
+Raised approvals to 98% by linking topics to enterprise strategy.
+Directed investigations into Gen AI, Graph, ML, LLM workflows.
+Presented monthly outcomes to 250+ stakeholders, driving technology adoption.
+
+Sr. Director of Software Engineering — Sparkfund
+August 2019 - March 2023
+
+Led team of 12 implementing product roadmap with 95% on-time delivery rate.
+Oversaw development of SparkOS platform, unlocking previously siloed information across partner ecosystem.
+Introduced Agile processes and KPIs to foster cross-departmental coordination.
+Established CI/CD pipeline, increasing deployments while lowering error rates.
+Drove Sparkfund's first security audit, delivering SOC 1/SOC 2 compliance.
+Conducted technical due diligence supporting M&A and enterprise onboarding.
+
+Engineering Manager — Etsy
+January 2016 - July 2019
+
+Assembled a diverse team of 20+ high-performing software engineers.
+Maintained 100% retention through significant organizational changes.
+Owned migration of core marketing system serving 10M+ messages per hour.
+Achieved significant cost savings integrating 3rd-party customer support software.
+
+Engineering Manager — Constant Contact
+December 2012 - December 2015
+
+Migrated 650,000 customers in 6 months during migration of main CRM application.
+Recruited 20+ engineers, building out diverse, full-stack teams.
+Created apprenticeship program to grow high-potential candidates.
+Eliminated a 300+ issue backlog and cut new defect rates by 80%.
+
+Manager of Development — America’s Test Kitchen
+November 2010 - November 2012
+
+Led creation of highest retention product in company history, ATK Cooking School.
+Managed the migration of 2M+ users, unifying data and enabling single sign-on (SSO) to improve cross-product access and reliability.
+
+Lieutenant, United States Coast Guard
+
+Bachelor of Arts, Language & Literature
+St. Mary’s College of Maryland
+
+Technical Skills 
+Emerging Technology: AI/ML R&D Direction, Graph & LLM Workflow Strategy.
+Languages & Frameworks: Ruby on Rails, React/JavaScript, Elixir, Java, PHP. Databases: PostgreSQL, MySQL, Oracle. 
+Infrastructure: AWS, CI/CD, Observability, Security & Compliance.

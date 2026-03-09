@@ -1,0 +1,72 @@
+page_links:
+  - title: About
+    url: /about.html
+  - title: Resume
+    url: /resume.html
+  - title: Contact
+    url: /contact.html
+    
+resume_links:
+  - title: DOC
+    url: brian_runk_resume.docx
+    img: doc.png
+    alt_txt: MS Word Resume
+    
+  - title: PDF
+    url:  brian_runk_resume.pdf
+    img: pdf.png
+    alt_txt: PDF Resume
+    
+  - title: TXT
+    url:  brian_runk_resume.txt
+    img: txt.png
+    alt_txt: Text Resume
+
+hero:
+  title: Hi, I'm Brian<br>I lead engineering teams.
+  subtext: Team Scaling · Platform Migrations · AI Implementation
+  image: hero-placeholder-rotated.png
+  image_alt: Placeholder portrait photo
+
+scan_stats:
+  - value: 100% retention
+  - value: 3 large-scale migrations
+  - value: 10M+ msgs/hr throughput
+
+page_entries:
+  - title: Management
+    id: block-about
+    url: /about
+    desc: Built teams to 20+ engineers with 100% retention during high-change periods.
+    action: About
+  - title: Delivery
+    id: block-resume
+    url: /resume
+    desc: Reduced defect rates by 80% and introduced delivery practices that improved predictability.
+    action: Resume
+  - title: Scaling
+    id: block-contact
+    url: /contact
+    desc: Led migrations at Etsy (10M+ msgs/hr), Constant Contact (650k customers), and ATK (2M+ users).
+    action: Contact
+
+social_entries:
+  - title: linkedin
+    url: https://www.linkedin.com/in/brianrunk
+    img: linkedin.svg
+    alt_txt: LinkedIn
+    
+  - title: github
+    url: https://github.com/brian915
+    img: github.svg
+    alt_txt: Github
+
+  - title: instagram
+    url: https://instagram.com/brian_915
+    img: instagram.svg
+    alt_txt: Instagram
+
+  - title: spotify
+    url: https://open.spotify.com/user/brian915/playlists
+    img: spotify.svg
+    alt_txt: Spotify

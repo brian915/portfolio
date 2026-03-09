@@ -2,7 +2,7 @@
 permalink: /about.html
 layout: page
 title: About
-description: "About Brian Runk, Engineering Director focused on scaling teams, modernizing platforms, and delivering operational AI strategy."
+description: "About Brian Runk, Engineering Director focused on scaling teams, modernizing platforms, and delivering operational AI."
 ---
 
 <article class="content">

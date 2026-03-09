@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Leadership Market Fit 2026: Brian Runk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Manrope', sans-serif; background-color: #1e1e2e; color: #cad3f5; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        
+        /* Chart Container Styling - MANDATORY */
+        .chart-container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 600px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 320px; 
+            max-height: 400px; 
+        }
+        @media (min-width: 768px) { .chart-container { height: 380px; } }
+
+        /* Card Styling */
+        .card { background-color: #24273a; border-radius: 0.75rem; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28); padding: 1.5rem; height: 100%; transition: transform 0.2s; border: 1px solid rgba(180, 190, 254, 0.2); }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(0, 0, 0, 0.36); }
+
+        /* Interactive Elements */
+        .btn-toggle { transition: all 0.2s; }
+        .btn-toggle:hover { background-color: rgba(180, 190, 254, 0.15); }
+        .btn-toggle.active { background-color: #b4befe; color: #1e1e2e; border-color: #b4befe; }
+        
+        .pitch-card { border-left: 4px solid transparent; cursor: pointer; transition: all 0.2s; }
+        .pitch-card:hover { background-color: #313244; }
+        .pitch-card.active { border-left-color: #ed8796; background-color: #313244; }
+        .architect-inset-text { color: #f4f5ff !important; }
+        .ai-flow-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr) 40px minmax(0, 1fr);
+            gap: 12px;
+            align-items: center;
+        }
+        .ai-flow-card {
+            min-height: 146px;
+            padding: 12px;
+        }
+        .ai-flow-card p {
+            line-height: 1.3;
+        }
+        .ai-flow-arrow {
+            text-align: center;
+            font-size: 3rem;
+            color: #939ab7;
+            font-weight: 700;
+        }
+
+        .bg-white { background-color: #24273a !important; }
+        .bg-slate-50 { background-color: #313244 !important; }
+        .bg-slate-900 { background-color: #181825 !important; }
+        .bg-slate-800,
+        .bg-slate-800\/50 { background-color: #313244 !important; }
+        .bg-amber-50 { background-color: rgba(237, 135, 150, 0.16) !important; }
+        .bg-blue-50,
+        .bg-purple-50 { background-color: rgba(180, 190, 254, 0.16) !important; }
+        .bg-blue-500,
+        .bg-blue-600 { background-color: rgba(180, 190, 254, 0.25) !important; }
+        .bg-blue-100 { background-color: rgba(180, 190, 254, 0.2) !important; }
+        .bg-orange-500,
+        .bg-orange-400 { background-color: #ed8796 !important; }
+        .text-white { color: #f4f5ff !important; }
+        .text-slate-900,
+        .text-slate-800,
+        .text-slate-700 { color: #f4f5ff !important; }
+        .text-slate-600,
+        .text-slate-500 { color: #a5adcb !important; }
+        .text-slate-400 { color: #939ab7 !important; }
+        .text-blue-600,
+        .text-blue-500,
+        .text-blue-400 { color: #b4befe !important; }
+        .text-orange-500,
+        .text-orange-400,
+        .text-orange-600 { color: #ed8796 !important; }
+        .text-emerald-400,
+        .text-emerald-500 { color: #a6da95 !important; }
+        .border-slate-200,
+        .border-slate-700,
+        .border-amber-100,
+        .border-blue-100,
+        .border-blue-200,
+        .border-purple-100,
+        .border-blue-500 { border-color: rgba(180, 190, 254, 0.2) !important; }
+
+        @media (max-width: 1200px) {
+            .ai-flow-row {
+                grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
+                gap: 10px;
+            }
+            .ai-flow-card {
+                min-height: 132px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 860px) {
+            .ai-flow-row {
+                grid-template-columns: 1fr;
+            }
+            .ai-flow-arrow {
+                display: none;
+            }
+        }
+    </style>
+    <!-- Chosen Palette: Vibrant Tech Blue & Energetic Orange. 
+         Primary: #2563eb (Blue), Secondary: #f97316 (Orange), Success: #10b981 (Emerald), Dark: #0f172a (Slate) 
+    -->
+
+    <!-- Application Structure Plan:
+         1. Hero Section: Immediate correction of the narrative. Reframing "Fintech" to "AI R&D".
+         2. Market Analysis Dashboard: Visualizing the PDF data (Series B/C opportunity) vs. Resume strengths.
+         3. The "AI Advantage": Showcasing the Ruby scripts as tangible proof of "AI Literacy" (addressing the market gap).
+         4. Fit Analysis: Radar chart mapping specific skills (Scaling, Migration, Process) to Series B needs.
+         5. Interactive Pitch Engine: The core tool. User selects a "Need" (e.g., Scaling), App delivers the "Proof" (Etsy/CC stats).
+         6. Evidence Locker: Key metrics and recommendations.
+    -->
+    
+    <!-- Visualization & Content Choices:
+         1. Market Bar Chart: Probability by Stage. Goal: Compare. Viz: Bar Chart. Justification: Clearly shows Series B/C dominance over Big Tech.
+         2. Skills Radar Chart: Candidate Fit. Goal: Relationships. Viz: Radar Chart. Justification: Shows the multi-dimensional balance of the candidate (Tech + People + Strategy).
+         3. Pipeline Flow (HTML): AI Automation. Goal: Change/Process. Viz: CSS Flow Diagram. Justification: Visualizes the complexity of the Ruby scripts without using Mermaid/SVG.
+         4. Pitch Engine (HTML/JS): Narrative Building. Goal: Inform/Organize. Viz: Interactive Text Cards. Justification: Allows dynamic exploration of selling points.
+         
+         CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+</head>
+<body class="pb-12">
+
+    <!-- Header / Hero -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Market Fit Assessment <span class="text-blue-600">2026</span></h1>
+                    <p class="text-sm text-slate-500 font-medium">Target: Engineering Leadership (Series B/C) | Focus: Growth & Scale</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+
+        <section>
+            <div class="mb-6">
+                <h2 class="text-3xl font-bold text-slate-900">The Strategic Equation</h2>
+                <p class="text-slate-600 mt-2 max-w-3xl leading-relaxed">
+
+          
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div class="bg-white rounded-xl p-6 border-2 border-blue-500 shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg"></div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">✓</div>
+                        <h3 class="text-lg font-bold text-slate-900">Valuable Experience</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-700">
+                        <li class="flex gap-2 items-start">
+                            <span class="text-emerald-500 font-bold">➜</span> 
+                            <span><strong>Growth & Scale:</strong> Etsy (10M+ msgs/hr) & Constant Contact (650k migrations).</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-emerald-500 font-bold">➜</span> 
+                            <span><strong>Applied AI Strategy:</strong> FINRA R&D ($3M budget, LLM workflows).</span>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <span class="text-emerald-500 font-bold">➜</span> 
+                            <span><strong>Team Builder:</strong> "Best manager I've ever worked for" (Recommendations).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Market Data Visualization -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900 border-l-4 border-orange-500 pl-4">Market Reality: The "Series B" Sweet Spot</h2>
+                <p class="text-slate-600 mt-2 max-w-4xl">
+                    Data from your search strategy report indicates a specific "Sweet Spot" for hiring. Big Tech is cutting, but Series B/C (50-200 employees) is hiring leaders to solve <strong>Scale</strong> and <strong>Process</strong> problems—exactly what you solved at Etsy and Constant Contact.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Hiring Probability Chart -->
+                <div class="card">
+                    <h3 class="font-bold text-slate-800 mb-2">Hiring Probability by Company Stage (2026)</h3>
+                    <p class="text-xs text-slate-500 mb-4">Source: Search Strategy Report. Series B/C offers highest yield.</p>
+                    <div class="chart-container">
+                        <canvas id="marketChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Skills Match Radar -->
+                <div class="card">
+                    <h3 class="font-bold text-slate-800 mb-2">Your "Growth Leader" Fit Score</h3>
+                    <p class="text-xs text-slate-500 mb-4">Mapping your Resume Metrics to Series B/C Requirements.</p>
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: The AI Proof (Addressing the Gap) -->
+        <section class="bg-slate-900 rounded-2xl p-8 text-white shadow-xl">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white">The "AI Literacy" Market Gap</h2>
+                    <p class="text-slate-400 mt-2 text-sm max-w-2xl">
+                        The report states: "Many leadership candidates have poor AI skills." 
+                        <span class="text-emerald-400 font-bold">You are not one of them.</span> 
+                        Your custom agents (<code>content production pipelines</code>) prove you don't just talk strategy—you build tools.
+                    </p>
+                </div>
+                <div class="px-4 py-2 bg-blue-600 rounded-lg text-xs font-bold tracking-wider uppercase">
+                    Competitive Advantage
+                </div>
+            </div>
+
+            <!-- Conceptual Flow of User's Script -->
+            <div class="ai-flow-row text-center">
+                <!-- Step 1 -->
+                <div class="ai-flow-card bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-2">📂</div>
+                    <h4 class="font-mono text-emerald-400 text-sm font-bold">Input Parsing</h4>
+                    <p class="text-xs text-slate-400 mt-2">Ingests unstructureds (TXT/MD)</p>
+                </div>
+                
+                <!-- Arrow -->
+                <div class="ai-flow-arrow">➔</div>
+
+                <!-- Step 2 -->
+                <div class="ai-flow-card bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-2">🤖</div>
+                    <h4 class="font-mono text-blue-400 text-sm font-bold">LLM Agents</h4>
+                    <p class="text-xs text-slate-400 mt-2">Tool Coordination and API access via Programmatic Flow</p>
+                </div>
+
+                <!-- Arrow -->
+                <div class="ai-flow-arrow">➔</div>
+
+                <!-- Step 3 -->
+                <div class="ai-flow-card bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-2">💎</div>
+                    <h4 class="font-mono text-orange-400 text-sm font-bold">Strategic Asset Generation</h4>
+                    <p class="text-xs text-slate-400 mt-2">Generates tailored content & analysis via LLM harness</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-slate-800/50 p-4 rounded border-l-4 border-emerald-500 text-sm text-slate-300 italic">
+                "Brian doesn't just manage R&D; he uses the tools himself. While other Directors discuss AI in theory, Brian built a custom pipeline to automate his own workflows." 
+            </div>
+        </section>
+
+        <!-- SECTION 4: Interactive Pitch Engine -->
+        <section id="pitch-engine">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">Interactive Pitch Engine</h2>
+                <p class="text-slate-600 mt-2">
+                  Select a challenge, see how Brian has addressed this in the past.<br>
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-6 h-auto lg:h-[500px]">
+                <!-- Left: Problems -->
+                <div class="lg:w-1/3 flex flex-col gap-3">
+                    <div class="pitch-card active p-4 bg-white border border-slate-200 rounded-lg shadow-sm" onclick="showPitch('scaling', this)">
+                        <h4 class="font-bold text-slate-800">The "Hyper-Growth" Pain</h4>
+                        <p class="text-xs text-slate-500 mt-1">"We need to double our team size without breaking our culture."</p>
+                    </div>
+                    <div class="pitch-card p-4 bg-white border border-slate-200 rounded-lg shadow-sm" onclick="showPitch('debt', this)">
+                        <h4 class="font-bold text-slate-800">The "Technical Debt" Pain</h4>
+                        <p class="text-xs text-slate-500 mt-1">"Our legacy MVP is crumbling under new scale."</p>
+                    </div>
+                    <div class="pitch-card p-4 bg-white border border-slate-200 rounded-lg shadow-sm" onclick="showPitch('ai', this)">
+                        <h4 class="font-bold text-slate-800">The "AI Strategy" Pain</h4>
+                        <p class="text-xs text-slate-500 mt-1">"We need to implement AI but don't know where to start."</p>
+                    </div>
+                    <div class="pitch-card p-4 bg-white border border-slate-200 rounded-lg shadow-sm" onclick="showPitch('chaos', this)">
+                        <h4 class="font-bold text-slate-800">The "Startup Chaos" Pain</h4>
+                        <p class="text-xs text-slate-500 mt-1">"We ship fast but break everything. We need maturity."</p>
+                    </div>
+                </div>
+
+                <!-- Right: Solution (Dynamic) -->
+                <div class="lg:w-2/3 bg-white rounded-xl border border-slate-200 shadow-lg p-8 relative flex flex-col justify-center">
+                    <div id="pitch-content" class="transition-opacity duration-300">
+                        <!-- Content injected via JS -->
+                    </div>
+                    <!-- Watermark -->
+                    <div class="absolute bottom-4 right-4 text-slate-100 text-6xl font-bold z-0 pointer-events-none">PROOF</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: Evidence Locker -->
+        <section>
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">Experiential Proof</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Metric 1 -->
+                <div class="card border-t-4 border-blue-500">
+                    <h4 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-2">Scale Experience</h4>
+                    <div class="text-3xl font-bold text-slate-900 mb-1">10M+</div>
+                    <p class="text-sm text-slate-600 font-medium">Messages/Hour</p>
+                    <p class="text-xs text-slate-400 mt-3 border-t pt-3">Ability to handle enterprise-scale throughput and high-stakes infrastructure.</p>
+                </div>
+
+                <!-- Metric 2 -->
+                <div class="card border-t-4 border-emerald-500">
+                    <h4 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-2">Management Quality</h4>
+                    <div class="text-3xl font-bold text-slate-900 mb-1">100%</div>
+                    <p class="text-sm text-slate-600 font-medium">Retention</p>
+                    <p class="text-xs text-slate-400 mt-3 border-t pt-3">"Best manager I've ever worked for." - Can scale teams without attrition.</p>
+                </div>
+
+                <!-- Metric 3 -->
+                <div class="card border-t-4 border-orange-500">
+                    <h4 class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-2">Technical Delivery</h4>
+                    <div class="text-3xl font-bold text-slate-900 mb-1">80%</div>
+                    <p class="text-sm text-slate-600 font-medium">Defect Reduction</p>
+                    <p class="text-xs text-slate-400 mt-3 border-t pt-3">Brian doesn't just ship features; you fix engineering culture and quality.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2"><strong>Brian Runk</strong> | 2026 Engineering Leadership Value Proposition</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // --- DATA PREPARATION ---
+        const pitchData = {
+            scaling: {
+                title: "The Pitch: Reliable Scaling",
+                subtitle: "You need someone who has done this before, safely.",
+                text: "At Etsy, I built a team of 20+ engineers during a period of intense growth while maintaining 100% retention. I don't just hire bodies; I build 'Apprenticeship Programs' (like I did at Constant Contact) to create a sustainable talent pipeline.",
+                proof: ["Managed 20+ Engineers", "100% Retention Stat", "Created Apprentice Program"]
+            },
+            debt: {
+                title: "The Pitch: Modernization Expert",
+                subtitle: "You need to fix the plane while flying it.",
+                text: "I specialize in high-stakes migrations. I led the migration of 650,000 customers at Constant Contact and a 10M+ msg/hr system at Etsy without downtime. I reduced defect rates by 80% by clearing a 300+ issue backlog.",
+                proof: ["650k Customer Migration", "10M+ Msg/Hr Scale", "80% Defect Reduction"]
+            },
+            ai: {
+                title: "The Pitch: Pragmatic AI Leader",
+                subtitle: "You need implementation, not hallucinations.",
+                text: "I managed a $3M R&D budget at FINRA specifically for AI/ML and Graph technologies. Unlike many leaders, I am hands-on: I write my own LLM agents in Ruby to automate complex workflows (like my job search pipeline). I bridge the gap between R&D and Production.",
+                proof: ["$3M R&D Budget", "Ruby/LLM Agent Author", "25% Efficiency Gain"]
+            },
+            chaos: {
+                title: "The Pitch: The Stabilizer",
+                subtitle: "You need process that enables speed, not blocks it.",
+                text: "Recommendations from my teams highlight my ability to 'keep the team humming during stressful times.' I introduce Agile and CI/CD maturity that increases delivery predictability. I am the 'Player/Coach' who brings order to the startup chaos.",
+                proof: ["'Best Manager' Recs", "Agile Transformation", "CI/CD Implementation"]
+            }
+        };
+
+        // --- CHART 1: Market Data (Bar) ---
+        const ctxMarket = document.getElementById('marketChart').getContext('2d');
+        const marketChart = new Chart(ctxMarket, {
+            type: 'bar',
+            data: {
+                labels: ['Big Tech', 'Series A', 'Series B/C', 'Late Stage', 'Non-Tech'],
+                datasets: [{
+                    label: 'Hiring Probability Score',
+                    data: [15, 45, 92, 60, 30],
+                    backgroundColor: [
+                        '#cbd5e1', // Big Tech (Low)
+                        '#93c5fd', // Series A
+                        '#2563eb', // Series B/C (Target - Blue)
+                        '#60a5fa', // Late Stage
+                        '#cbd5e1'  // Non-Tech
+                    ],
+                    borderRadius: 6,
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1e293b',
+                        padding: 12,
+                        titleFont: { size: 14, family: 'Inter' },
+                        bodyFont: { size: 13, family: 'Inter' },
+                        callbacks: {
+                            label: function(context) {
+                                return `Probability: ${context.raw}%`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: { 
+                        beginAtZero: true, 
+                        grid: { display: true, color: '#f1f5f9' },
+                        ticks: { font: { family: 'Inter' } }
+                    },
+                    x: { 
+                        grid: { display: false },
+                        ticks: { font: { family: 'Inter', weight: '500' } }
+                    }
+                }
+            }
+        });
+
+        // --- CHART 2: Skills Radar ---
+        // Label wrapping logic for Radar chart
+        const wrapLabel = (str) => {
+            if (str.length <= 16) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + 1 + words[i].length <= 16) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        };
+
+        const skillLabels = [
+            "Team Scaling (0-20+)", 
+            "Platform Migration", 
+            "AI/R&D Strategy", 
+            "Process Maturity", 
+            "Crisis Management"
+        ].map(wrapLabel);
+
+        const ctxSkills = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctxSkills, {
+            type: 'radar',
+            data: {
+                labels: skillLabels,
+                datasets: [{
+                    label: 'Brian Runk Profile',
+                    data: [95, 90, 85, 92, 88], // High scores based on artifacts
+                    backgroundColor: 'rgba(37, 99, 235, 0.2)', // Blue with opacity
+                    borderColor: '#2563eb',
+                    pointBackgroundColor: '#2563eb',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#2563eb',
+                    borderWidth: 2
+                }, {
+                    label: 'Avg. Market Candidate',
+                    data: [60, 50, 40, 65, 55], // Baseline
+                    backgroundColor: 'rgba(249, 115, 22, 0.2)', // Orange with opacity
+                    borderColor: '#f97316',
+                    pointBackgroundColor: '#f97316',
+                    pointBorderColor: '#fff',
+                    borderWidth: 1,
+                    borderDash: [5, 5]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#e2e8f0' },
+                        grid: { color: '#e2e8f0' },
+                        pointLabels: {
+                            font: { family: 'Inter', size: 11, weight: '600' },
+                            color: '#475569'
+                        },
+                        ticks: { display: false, backdropColor: 'transparent' }
+                    }
+                },
+                plugins: {
+                    legend: { position: 'bottom', labels: { font: { family: 'Inter' } } },
+                    tooltip: {
+                        backgroundColor: '#1e293b',
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                return Array.isArray(label) ? label.join(' ') : label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // --- INTERACTIVITY: PITCH ENGINE ---
+        function showPitch(type, element) {
+            // Update UI State
+            document.querySelectorAll('.pitch-card').forEach(c => c.classList.remove('active'));
+            element.classList.add('active');
+
+            const content = pitchData[type];
+            const container = document.getElementById('pitch-content');
+            
+            // Build Tags HTML
+            const tagsHtml = content.proof.map(tag => 
+                `<span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-md border border-blue-200">${tag}</span>`
+            ).join('');
+
+            // Inject Content
+            container.style.opacity = '0';
+            setTimeout(() => {
+                container.innerHTML = `
+                    <div class="relative z-10">
+                        <div class="text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">Strategic Value</div>
+                        <h3 class="text-3xl font-bold text-slate-900 mb-2">${content.title}</h3>
+                        <p class="text-lg text-slate-500 font-medium mb-6 italic">"${content.subtitle}"</p>
+                        
+                        <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-blue-500 mb-6">
+                            <p class="text-slate-700 leading-relaxed architect-inset-text">"${content.text}"</p>
+                        </div>
+
+
+                    </div>
+                `;
+                container.style.opacity = '1';
+            }, 200);
+        }
+
+        // Initialize with 'Scaling' pitch
+        document.addEventListener('DOMContentLoaded', () => {
+            showPitch('scaling', document.querySelector('.pitch-card'));
+        });
+
+    </script>
+</body>
+</html>

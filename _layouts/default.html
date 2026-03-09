@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}" class="html">
+  {%- include head.html -%}
+  <body>
+    <div class="viewport">    
+
+      <div class="viewport-top" id="top">
+
+        {{ content }}
+      
+      </div>
+	
+      {% if site.theme_config.show_footer == true %}
+        <div class="viewport-bottom">
+	  <footer class="site-foot">
+	    <div class="site-foot-nav container">
+	      <div class="site-foot-nav-left">
+	        {%- if site.theme_config.show_copyright == true -%}
+		<a href="#top">
+		  {{site.author}}
+	          &nbsp;
+	          •
+	          &nbsp;
+	          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;
+		</a>
+	        {%- endif -%}   
+	      </div>
+	      
+	      <div class="site-foot-nav-right">
+	        {% include social_links_list.html collection=site.data.home.social_entries %}
+	      </div>
+	    </div>
+	  </footer>
+	</div>
+      {% endif %}
+
+    </div>
+  </body>
+</html>
