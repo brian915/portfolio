@@ -5,7 +5,7 @@ title: Contact
 description: "Contact Brian Runk regarding Director or VP of Engineering opportunities focused on platform modernization, team growth, and AI delivery."
 ---
 
-<article class="content">
+<article class="content secondary-main">
   <h1 class="content-title">Contact</h1>
   <section class="content-body load-external-scripts">
     <p>Currently interviewing.</p>

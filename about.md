@@ -5,7 +5,7 @@ title: About
 description: "About Brian Runk, Engineering Director focused on scaling teams, modernizing platforms, and delivering operational AI."
 ---
 
-<article class="content">
+<article class="content secondary-main">
   <h1 class="content-title">About</h1>
 
   <section class="content-body">

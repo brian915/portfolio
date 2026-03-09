@@ -1525,6 +1525,14 @@ a.post-card:hover {
     color: #363a4f;
 }
 
+.secondary-main .content-body,
+.secondary-main .content-body p,
+.secondary-main .content-body li,
+.secondary-main .content-body ul,
+.secondary-main .content-body ol {
+    color: #d8d9e2;
+}
+
 #fs-frm {
     width: 100%;
     max-width: 640px;

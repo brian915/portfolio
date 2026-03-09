@@ -5,7 +5,7 @@ title: Resume
 description: "Resume for Brian Runk, Engineering Director specializing in platform migrations, organizational scaling, and AI implementation."
 ---
 
-<article class="content">
+<article class="content secondary-main">
   <h1 class="content-title">Resume</h1>
   <section class="content-body">
     <h6>Executive Summary</h6>
