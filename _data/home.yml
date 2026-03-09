@@ -56,7 +56,7 @@ page_entries:
     action: Resume
   - title: Scaling
     id: block-contact
-    url:/contact
+    url: /contact
     desc: 
     action: Contact
 

@@ -1,47 +1,11 @@
-
-<section class="post-feed">
-  {% for post_item in include.collection %}
-  {% assign post_url = post_item.url %}
-  {% unless post_url contains '.html' %}
-    {% assign post_url = post_url | append: '.html' %}
-  {% endunless %}
-  <a class="post-card" href="{{ post_url | relative_url }}">
-    <header class="post-card-header">
-      {% if post_item.img %}
-      <div id="{{post_item.id}}" class="post-card-image" style="background-image: url(/assets/images/{{ post_item.img }});"></div>
-      {% endif %}
-      <h2 class="post-card-title">{{ post_item.title }}</h2>
-      {% if post_item.subtitle %}
-      <p class="post-card-subtitle">{{ post_item.subtitle }}</p>
-      {% endif %}
-    </header>
-    <section class="post-card-excerpt">
-      {% if post_item.desc != false %}
-        {{ post_item.desc }}
-      {% endif %}
-    </section>
-    <section class="post-card-action">
-      {% if post_item.action != false %}
-        &#60;{{ post_item.action }}&#62;
-      {% endif %}
-    </section>
-    <footer class="post-card-footer">
-      <div class="post-card-footer-left">
-	<div class="post-card-avatar">
-	</div>
-	<span>
-	</span>
-      </div>
-      <div class="post-card-footer-right">
-	<div>
-	</div>
-      </div>
-    </footer>
-  </a>
+<section class="post-feed home-quote-feed" aria-label="Testimonials">
+  {% for quote_item in include.collection %}
+  <article id="{{ quote_item.id }}" class="post-card home-quote-card">
+    <p class="home-quote-text">{{ quote_item.quote }}</p>
+    <p class="home-quote-author">{{ quote_item.author }}</p>
+    {% if quote_item.title and quote_item.title != "" %}
+    <p class="home-quote-title">{{ quote_item.title }}</p>
+    {% endif %}
+  </article>
   {% endfor %}
-</section>    
-
-
-
-
-
+</section>

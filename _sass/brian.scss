@@ -1333,6 +1333,66 @@ hr:after {
     padding-top: 0;
 }
 
+.home-quote-band .home-quote-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 220px;
+    padding: 20px 18px;
+    border-right: 1px solid rgba(180, 190, 254, 0.15);
+}
+
+.home-quote-band .home-quote-card:last-child {
+    border-right: 0;
+}
+
+.home-quote-band .home-quote-text {
+    margin: 0;
+    color: #f4f5ff;
+    text-align: center;
+    font-size: clamp(1.8rem, 1.6vw, 2.3rem);
+    line-height: 1.4;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.home-quote-band .home-quote-text::before,
+.home-quote-band .home-quote-text::after {
+    color: rgba(244, 245, 255, 0.58);
+    font-size: clamp(2.6rem, 2.2vw, 4.2rem);
+    line-height: 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.home-quote-band .home-quote-text::before {
+    content: "\201C";
+    margin-right: 0.16em;
+    vertical-align: -0.2em;
+}
+
+.home-quote-band .home-quote-text::after {
+    content: "\201D";
+    margin-left: 0.1em;
+    vertical-align: -0.25em;
+}
+
+.home-quote-band .home-quote-author {
+    margin: 14px 0 0;
+    color: #f4f5ff;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.home-quote-band .home-quote-title {
+    margin: 6px 0 0;
+    color: #a5adcb;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.35;
+}
+
 .home-card-band {
     width: 100%;
     padding: 6px 4vw 4vw;
@@ -1484,6 +1544,10 @@ a.post-card:hover {
 }
 
 @media (max-width: 980px) {
+    .home-quote-band .home-quote-card {
+        min-height: 0;
+    }
+
     .home-card-band .post-feed {
         grid-template-columns: 1fr;
     }
