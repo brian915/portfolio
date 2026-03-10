@@ -33,15 +33,20 @@ quote_entries:
     id: block-quote1
     quote:  Brian has a near-psychic ability to build a great team.
     author: Alice M.
+    action: more
+    url: https://www.linkedin.com/in/brianrunk/details/recommendations/
   - title: Senior Software Engineer
     id: block-quote2
     quote: Brian is the best manager I've ever worked for, full stop.
     author: Sage R.
+    action: more	
+    url: https://www.linkedin.com/in/brianrunk/details/recommendations/
   - title: Sr. Computer Scientist
     id: block-quote3
     quote: Without Brian joining when he did, we NEVER would have launched.
     author: John B.
-
+    action: more	
+    url: https://www.linkedin.com/in/brianrunk/details/recommendations/
 
 page_entries:
   - title: Management
