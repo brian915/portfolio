@@ -19,14 +19,14 @@ layout: default
       </div>
     </div>
 
-    <section class="home-hero">
-      <div class="home-hero-photo-column">
-        <img class="home-hero-photo" src="/assets/images/{{ site.data.home.hero.image }}" alt="{{ site.data.home.hero.image_alt }}">
+    <section class="split hero">
+      <div class="split-media">
+        <img class="split-image" src="/assets/images/{{ site.data.home.hero.image }}" alt="{{ site.data.home.hero.image_alt }}">
       </div>
-      <div class="home-hero-copy">
-        <h1 class="home-hero-title">{{ site.data.home.hero.title }}</h1>
-        <div class="home-hero-accent"></div>
-        <p class="home-hero-subtext">{{ site.data.home.hero.subtext }}</p>
+      <div class="split-content">
+        <h1 class="feature-title">{{ site.data.home.hero.title }}</h1>
+        <div class="accent-bar hero"></div>
+        <p class="feature-subtext">{{ site.data.home.hero.subtext }}</p>
       </div>
     </section>
   </div>
@@ -38,15 +38,15 @@ layout: default
   </div>
 
   {% if site.theme_config.show_quotes == true %}
-  <div class="home-card-band quote-band">
+  <div class="band quote-band">
     {% include quote_block.html collection=site.data.home.quote_entries %}
   </div>
   {% endif %}
 
 
   {% if site.theme_config.show_pages == true %}
-  <div class="home-card-band">
-    {% include page_block.html collection=site.data.home.page_entries %}
+  <div class="band">
+    {% include section_block.html collection=site.data.home.page_entries %}
   </div>
   {% endif %}
 

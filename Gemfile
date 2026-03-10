@@ -25,4 +25,4 @@ group :jekyll_plugins do
 end
 
 gem "titlecaser"
-
+gem "nokogiri", ">= 1.19.1", "< 2.0"

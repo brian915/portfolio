@@ -1,12 +1,9 @@
-<section class="post-feed quote-feed" aria-label="Testimonials">
+<section class="post-feed" aria-label="Testimonials">
   {% for quote_item in include.collection %}
   <article id="{{ quote_item.id }}" class="post-card quote-card">
     <p class="quote-text">{{ quote_item.quote }}</p>
     <p class="quote-author">{{ quote_item.author }}</p>
     <p class="quote-title">{{ quote_item.title }}</p>
-    <div id="quote-link" class="quote-link-active">
-    <a href="{{ quote_item.url }}">{{ quote_item.action }}</a>
-    </div>
   </article>
   {% endfor %}
 </section>

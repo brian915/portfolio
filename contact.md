@@ -7,28 +7,20 @@ description: "Contact Brian Runk for  Director or VP of Engineering opportunitie
 
 <article class="content secondary-main">
   <h1 class="content-title">Contact</h1>
-  <section class="content-body load-external-scripts">
-    <p>Currently interviewing.</p>
-    <p>Considering Director/VP of Engineering roles with strong product-focused companies ready to scale.</p>
 
-    <h6 id="lets-discuss">Let's discuss:</h6>
-    <p><a href="mailto:">brian@brianrunk.net</a></p>
-
-    <!-- h6 id="calendly">Calendly Link:</h6 -->
-
-    <!-- Calendly inline widget begin 
-    <div class="calendly-inline-widget" data-url="https://calendly.com/brian-915?hide_gdpr_banner=1" style="position: relative;min-width:320px;height:320px;" data-processed="true">
-      <div class="calendly-spinner">
-        <div class="calendly-bounce1"></div>
-        <div class="calendly-bounce2"></div>
-        <div class="calendly-bounce3"></div>
+  <section class="split page">
+      <div class="split-media">
+        <img class="split-image masked" src="/assets/images/headshot.png" alt="">
       </div>
-      <iframe src="https://calendly.com/brian-915?embed_domain=brianrunk.net&amp;embed_type=Inline&amp;hide_gdpr_banner=1" width="640px" height="320px" frameborder="1"></iframe>
-    </div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
-    Calendly inline widget end -->
+      <div class="split-content">
+        <p>Considering Director/VP of Engineering roles</p>
+        <p id="lets-discuss">Let's discuss:</p>
+        <p><a href="mailto:">brian@brianrunk.net</a></p>
+        <div class="accent-bar page"></div>
+      </div>
+</section>
 
-    <hr />
+  <section class="content-body load-external-scripts">
     <h6 id="contact">Contact Form:</h6>
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/meqdlgky" method="post">
       <fieldset id="fs-frm-inputs">
