@@ -1,5 +1,5 @@
 ---
-permalink: /who.html
+permalink: /validation/who.html
 layout: page
 title: Who
 ---

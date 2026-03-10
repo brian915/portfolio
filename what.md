@@ -1,5 +1,5 @@
 ---
-permalink: /whXSXCat.html
+permalink: /validation/what.html
 layout: page
 title: What
 ---

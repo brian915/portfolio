@@ -37,6 +37,7 @@ remote-theme: ghostwalk
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 theme_config:

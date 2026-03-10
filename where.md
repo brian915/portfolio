@@ -1,5 +1,5 @@
 ---
-permalink: /where.html
+permalink: /validation/where.html
 layout: page
 title: Where
 ---
