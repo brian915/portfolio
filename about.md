@@ -11,9 +11,9 @@ description: "About Brian Runk, Engineering Director focused on scaling teams, m
   <section class="content-body">
     <ul class="summary">
       <li>Senior technology leader driving organizational change and innovation.</li>
-      <li>Track record of transforming engineering organizations through deliberate talent development and complex technical transformations.</li>
-      <li>Proven ability to modernize legacy systems while maintaining business continuity in rapid-growth environments.</li>
-      <li>Expertise in building diverse, high-performing teams, including creating innovative apprenticeship programs and mentoring non-traditional software engineers.</li>
+      <li>Track record of transforming engineering organizations through deliberate talent development</li>
+      <li>Proven ability to maintain business delivery in rapid-growth environments.</li>
+      <li>Expertise in building diverse, high-performing teams</li>
     </ul>
     <hr />
     <p>Specializing In:</p>
@@ -25,7 +25,7 @@ description: "About Brian Runk, Engineering Director focused on scaling teams, m
     <hr />
     <p>Core Focus:</p>
     <ul class="summary">
-      <p>I build high-performance engineering teams that deliver complex technical transformations while developing technical leaders.</p>
+      <p>I build high-performing engineering organizations  delivering complex technical implementations.</p>
     </ul>
   </section>
 </article>

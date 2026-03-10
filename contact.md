@@ -2,14 +2,14 @@
 permalink: /contact.html
 layout: page
 title: Contact
-description: "Contact Brian Runk regarding Director or VP of Engineering opportunities focused on platform modernization, team growth, and AI delivery."
+description: "Contact Brian Runk for  Director or VP of Engineering opportunities focused on platform modernization, team growth, and AI delivery."
 ---
 
 <article class="content secondary-main">
   <h1 class="content-title">Contact</h1>
   <section class="content-body load-external-scripts">
     <p>Currently interviewing.</p>
-    <p>Considering Director/VP of Engineering roles with strong product focus at companies ready to scale.</p>
+    <p>Considering Director/VP of Engineering roles with strong product-focused companies ready to scale.</p>
 
     <h6 id="lets-discuss">Let's discuss:</h6>
     <p><a href="mailto:">brian@brianrunk.net</a></p>
