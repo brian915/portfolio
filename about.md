@@ -11,11 +11,12 @@ description: "About Brian Runk, Engineering Director focused on scaling teams, m
         <img class="split-image masked" src="/assets/images/holly_at_baysox.png" alt="">
       </div>
       <div class="split-content">
-<p>I'm Brian, I enjoy making stuff.</p>
+      <p>I'm Brian, I enjoy making stuff.</p>
        <p>I live in Annapolis, Maryland with my dog Holly.</p>
-       <p>Before sunrise, you can find me at a local coffeeshop with caffeine, notebook and pen.</p>
-       <p>And on the weekends I'm often out on the water enjoying my kayak or paddleboard.</p>
-       <p>I also build teams with a deliberate culture supporting individuals and shipping products.</p>
+       <p>Before sunrise, you can find me at a local coffeeshop<br />
+       And on the weekends I'm often out paddling on the Bay</p>
+       <p>I also build teams with a deliberate culture<br />
+       of supporting individuals and shipping products.</p>
        </div>
   </section>
 </article>

@@ -1576,8 +1576,8 @@ a.post-card:hover {
     width: 100%;
     max-width: 640px;
 }
-
-@media (max-width: 1100px) {
+//@media (max-width: 1100px) {
+@media (max-width: 500px) {
     .home-mast {
         flex-direction: column;
         align-items: flex-start;
@@ -1625,7 +1625,6 @@ a.post-card:hover {
         font-size: 0.9rem;
     }
 }
-
 @media (max-width: 680px) {
     .home-text-links {
         gap: 16px;
